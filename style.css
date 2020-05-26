@@ -1,0 +1,56 @@
+.equipo-titulo {
+    color: #14d9c4;
+    font-size: 24px;
+    font-family: 'Rubik';
+    line-height: 45px;
+    text-align: center;
+}
+
+.fyd {
+    background-color: #b8b8b9;
+}
+
+.parrafo-equipo {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #54585a;
+    text-align: center;
+}
+
+.fortalezas-titulo, .debilidades-titulo {
+    font-family: 'Rubik';
+    color: #099d8d;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+}
+
+.fortalezas-parrafo, .debilidades-parrafo, .corina-parrafo, .elena-parrafo, .mari-andre-parrafo, .mercedes-parrafo, .sara-parrafo {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 24px;
+    color: #54585a;
+    text-align: center;
+}
+
+.quienes-somos-titulo {
+    color: #099d8d;
+    font-size: 24px;
+    font-family: 'Rubik';
+    line-height: 45px;
+    text-align: center;
+}
+
+.corina-titulo, .elena-titulo, .mari-andre-titulo, .mercedes-titulo, .sara-titulo {
+    color: black;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    line-height: 45px;
+    text-align: center;
+}
+
+.corina-foto, .elena-foto, .mari-andre-foto, .mercedes-foto, .sara-foto {
+    margin: auto;
+    display: block;
+}
