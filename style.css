@@ -6,7 +6,6 @@
   --primary: #099d8d;
   --gunmetal: #54585a;
   --black: #000000;
-
   /* Estos son los sacados de la web:
     Verde oscuro: #099d8d
     Verde claro: #14d9c4
@@ -19,8 +18,8 @@
 }
 
 /* reset */
-html,
-body {
+
+html, body {
   margin: 0;
   padding: 0;
 }
@@ -41,13 +40,13 @@ p {
   font-size: 16px;
   text-align: center;
   line-height: 24px;
-
   /* Creo que si todos los párrafos tienen el mismo estilo deberíamos cambiar el elemento pero podemos preguntar. Si no, una misma clase para los que sean iguales */
 }
 
 /* Header */
 
 /* Hero */
+
 .hero {
   height: 421px;
   margin-bottom: 46px;
@@ -62,6 +61,7 @@ p {
 }
 
 /* Slideshow */
+
 .slideshow-container {
   position: absolute;
   left: 0;
@@ -112,6 +112,7 @@ p {
 }
 
 /* Team */
+
 .team {
   margin-top: 46px;
 }
@@ -138,6 +139,7 @@ p {
 }
 
 /* About Us */
+
 .us-title {
   color: var(--primary);
   font-size: 24px;
@@ -155,9 +157,15 @@ p {
 }
 
 /* Creo que con tener una clase para las fotos serviría */
+
 .adalaber img {
   margin: auto;
   display: block;
+}
+
+.icons {
+  text-align: center;
+  color: #099d8d;
 }
 
 /* Footer */
