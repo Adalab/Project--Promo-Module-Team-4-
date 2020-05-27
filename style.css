@@ -1,56 +1,192 @@
+:root {
+  --black-8: rgba(0, 0, 0, 0.08);
+  --white: #ffffff;
+  --cool-grey: #b8b8b9;
+  --secondary: #14d9c4;
+  --primary: #099d8d;
+  --gunmetal: #54585a;
+  --black: #000000;
+
+  /* Estos son los sacados de la web:
+    Verde oscuro: #099d8d
+    Verde claro: #14d9c4
+    Blanco: #ffffff
+    Negro: #000000
+    Gris oscuro: #54585a
+    Gris claro: #b8b8b9
+    Gris de fondo: #f1f1f1
+ */
+}
+
+
+/* reset */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* end of reset */
+
+body {
+  /* Aquí podíamos poner propiedades generales que se comparten en todo la página, quizá el color de la fuente, o la familia,habrá que ver si hay cosas que se repiten */
+}
+
+p {
+  /* Creo que si todos los párrafos tienen el mismo estilo deberíamos cambiar el elemento pero podemos preguntar. Si no, una misma clase para los que sean iguales */
+}
+
+/* Header */
+
+/* Hero */
+.hero {
+  height: 421px;
+  margin-bottom: 46px;
+  position: relative;
+  background-color: var(--aqua);
+}
+
+.hero-image {
+  width: 100%;
+  height: 421px;
+  object-fit: cover;
+}
+
+/* Slideshow */
+.slideshow-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45%;
+  text-align: center;
+}
+
+.slideshow-container img {
+  width: 100px;
+  margin: -20px;
+  position: relative;
+}
+
+.slideshow-container img:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.slideshow-container img:nth-of-type(4) {
+  z-index: 1;
+}
+
+.slideshow-container img:nth-of-type(3) {
+  z-index: 2;
+}
+
+.claim {
+  /* He puesto el tamaño de Zeplin pero tenemos que saber si es fluid o fijo*/
+  width: 290px;
+  height: 80px;
+  /* Esto hace que se centre  */
+  margin: auto;
+  padding: 15px;
+  /* Esto hace que la caja sea relativa a la sección de Hero y me permite poder ponerla encima. bottom, left, right colocan la imagen relativa a Hero */
+  position: absolute;
+  bottom: -50px;
+  left: 0;
+  right: 0;
+  /* Según lo que he visto, en la versión mobile toooodooo el texto está centrado, así que sería mejor poner "text-align: center" en el body o un contenedor para que afecte a todos los elementos y no tengamos que repetir código */
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--black);
+  background-color: var(--white);
+}
+
+/* Team */
+.team {
+  margin-top: 46px;
+}
+
 .equipo-titulo {
-    color: #14d9c4;
-    font-size: 24px;
-    font-family: 'Rubik';
-    line-height: 45px;
-    text-align: center;
+  color: #14d9c4;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .fyd {
-    background-color: #b8b8b9;
+  background-color: #b8b8b9;
 }
 
 .parrafo-equipo {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    line-height: 24px;
-    color: #54585a;
-    text-align: center;
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
+  color: #54585a;
+  text-align: center;
 }
 
-.fortalezas-titulo, .debilidades-titulo {
-    font-family: 'Rubik';
-    color: #099d8d;
-    font-size: 22px;
-    line-height: 45px;
-    text-align: center;
+/* Creo que los títulos también se pueden revisar */
+.fortalezas-titulo,
+.debilidades-titulo {
+  font-family: "Rubik";
+  color: #099d8d;
+  font-size: 22px;
+  line-height: 45px;
+  text-align: center;
 }
 
-.fortalezas-parrafo, .debilidades-parrafo, .corina-parrafo, .elena-parrafo, .mari-andre-parrafo, .mercedes-parrafo, .sara-parrafo {
-    font-family: 'Open Sans';
-    font-size: 16px;
-    line-height: 24px;
-    color: #54585a;
-    text-align: center;
+/* About Us */
+/* Lo de los párrafos que puse antes */
+.fortalezas-parrafo,
+.debilidades-parrafo,
+.corina-parrafo,
+.elena-parrafo,
+.mari-andre-parrafo,
+.mercedes-parrafo,
+.sara-parrafo {
+  font-family: "Open Sans";
+  font-size: 16px;
+  line-height: 24px;
+  color: #54585a;
+  text-align: center;
 }
 
 .quienes-somos-titulo {
-    color: #099d8d;
-    font-size: 24px;
-    font-family: 'Rubik';
-    line-height: 45px;
-    text-align: center;
+  color: #099d8d;
+  font-size: 24px;
+  font-family: "Rubik";
+  line-height: 45px;
+  text-align: center;
 }
 
-.corina-titulo, .elena-titulo, .mari-andre-titulo, .mercedes-titulo, .sara-titulo {
-    color: black;
-    font-size: 20px;
-    font-family: 'Open Sans';
-    line-height: 45px;
-    text-align: center;
+/* Creo que misma clase para todos los títulos */
+.corina-titulo,
+.elena-titulo,
+.mari-andre-titulo,
+.mercedes-titulo,
+.sara-titulo {
+  color: black;
+  font-size: 20px;
+  font-family: "Open Sans";
+  line-height: 45px;
+  text-align: center;
 }
 
-.corina-foto, .elena-foto, .mari-andre-foto, .mercedes-foto, .sara-foto {
-    margin: auto;
-    display: block;
+/* Creo que con tener una clase para las fotos serviría */
+.corina-foto,
+.elena-foto,
+.mari-andre-foto,
+.mercedes-foto,
+.sara-foto {
+  margin: auto;
+  display: block;
 }
+
+/* Footer */
