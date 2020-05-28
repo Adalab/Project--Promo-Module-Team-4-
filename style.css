@@ -225,4 +225,8 @@ p {
   color: var(--primary);
 }
 
+i.fab:after {
+  content: "·";
+}
+
 /* Footer */
