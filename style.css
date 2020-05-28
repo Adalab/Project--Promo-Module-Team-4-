@@ -171,7 +171,20 @@ p {
 }
 
 .skills {
-  background-color: var(--cool-grey);
+  background-color: rgba(184, 184, 185, 0.2);
+  position: relative;
+  padding: 10px;
+}
+
+.rectangle {
+  width: 30px;
+  height: 30px;
+  transform: translateY(-26px) rotate(45deg);
+  background-color: var(--white);
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .skills h3 {
@@ -209,7 +222,7 @@ p {
 
 .icons {
   text-align: center;
-  color: #099d8d;
+  color: var(--primary);
 }
 
 /* Footer */
