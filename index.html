@@ -1,73 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Google Fonts -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Rubik:Medium|Open+Sans"
-    />
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Awesome Fonts -->
-    <script
-      src="https://kit.fontawesome.com/d000050c19.js"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:Medium|Open+Sans" />
 
-    <!-- Our Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+  <!-- Awesome Fonts -->
+  <script src="https://kit.fontawesome.com/d000050c19.js" crossorigin="anonymous"></script>
 
-    <title>Title of our Webpage</title>
-  </head>
+  <!-- Our Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
 
-  <body>
-    <header class="header">
+  <title>Title of our Webpage</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="wrapper">
       <div class="header-name">
-        <a href="#" title="Quinteto de $sudo" alt="Quinteto de $sudo"
-          >Quinteto de $sudo</a
-        >
+        <a href="#" title="Quinteto de $sudo" alt="Quinteto de $sudo">Quinteto de $sudo</a>
       </div>
       <nav>
         <ul class="header-menu">
           <li>
-            <a href="#" title="Ir a Equipo" alt="Equipo">EQUIPO</a>
+            <a href="#equipo" title="Ir a Equipo" alt="Equipo">EQUIPO</a>
           </li>
           <li>
-            <a href="#" title="Ir a Quiénes somos" alt="Quiénes somos"
-              >QUIÉNES SOMOS</a
-            >
+            <a href="#somos" title="Ir a Quiénes somos" alt="Quiénes somos">QUIÉNES SOMOS</a>
           </li>
           <li>
-            <a href="#" title="Ir a Contacto" alt="Contacto">CONTACTO</a>
+            <a href="#contacto" title="Ir a Contacto" alt="Contacto">CONTACTO</a>
           </li>
         </ul>
       </nav>
-    </header>
+    </div>
+  </header>
 
-    <main>
-      <!-- HERO -->
-      <section class="hero">
-        <!-- <img class="hero-image" src="images/back.png" alt="..."> -->
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <img class="hero-image" src="images/back.png" alt="...">
 
-        <!-- Slideshow -->
-        <div class="slideshow-container">
-          <a href="#corina"><img src="images/1.png" /></a>
-          <a href="#elena"><img src="images/2.png" /></a>
-          <a href="#mariandre"><img src="images/3.png" /></a>
-          <a href="#mercedes"><img src="images/4.png" /></a>
-          <a href="#sara"><img src="images/5.png" /></a>
-        </div>
-        <aside class="claim">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </aside>
-      </section>
+      <!-- Slideshow -->
+      <div class="slideshow-container">
+        <a href="#corina"><img src="images/1.png" /></a>
+        <a href="#elena"><img src="images/2.png" /></a>
+        <a href="#mariandre"><img src="images/3.png" /></a>
+        <a href="#mercedes"><img src="images/4.png" /></a>
+        <a href="#sara"><img src="images/5.png" /></a>
+      </div>
+      <aside class="claim">
+        Cinco cabezas programan mejor que una
+      </aside>
+    </section>
 
+    <div class="wrapper">
       <!-- TEAM -->
       <section class="team">
-        <article>
-          <h3 class="team-title">EQUIPO</h3>
+        <article class="section">
+          <h3 class="team-title" id="equipo">EQUIPO</h3>
           <p>
             Somos un grupo de mujeres, reinventadas como programadoras front-end
             que han llegado a este mundo desde diversas ramas, por lo que
@@ -79,7 +73,7 @@
           </p>
         </article>
 
-        <div class="skills">
+        <div class="skills section">
           <div class="rectangle"></div>
           <article>
             <h3>Fortalezas</h3>
@@ -97,7 +91,7 @@
             <h3>Debilidades</h3>
             <p>
               Lidiamos con la frustración y el miedo de no saber hacer las
-              cosas. Seguimos aprendiendo a organizarnos y darnos nuestros
+              cosas. Seguimos aprendiendo a organizarnos y a darnos nuestros
               tiempos. Trabajamos en no ser indiferentes ante las demás ideas.
             </p>
           </article>
@@ -105,10 +99,10 @@
       </section>
 
       <!-- ABOUT US -->
-      <section class="us">
+      <section class="us section">
         <!-- <h3 class="us-title">QUIÉNES SOMOS</h3> -->
         <!-- Es igual que el de "EQUIPO" así que yo no pondría clase -->
-        <h3>QUIÉNES SOMOS</h3>
+        <h3 id="somos">QUIÉNES SOMOS</h3>
         <div>
           <!-- Corina -->
           <article class="adalaber" id="corina">
@@ -122,10 +116,12 @@
                 disfrutar de las pequeñas cosas, como ver una serie con
                 palomitas. La vida es incierta. Come primero el postre.<br />
                 <span class="icons">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-github-alt"></i>
-                  <i class="fas fa-envelope"></i>
+                  <a href="#"> <i class="fab fa-twitter"></i> </a>
+                  <a href="https://www.linkedin.com/in/corina-mihaela-borcoci/" target="_blank"> <i
+                      class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/corimb" target="_blank"><i class="fab fa-github-alt"></i></a>
+                  <a href="mailto:cborcoci@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
                 </span>
               </p>
               <!-- ul  -->
@@ -135,7 +131,7 @@
           <!-- Elena -->
           <article class="adalaber" id="elena">
             <div class="zoom-in">
-              <img src="images/sara3.jpeg" alt="Sara foto" />
+              <img src="images/sara3.jpeg" alt="Elena foto" />
             </div>
             <div class="information">
               <h4 id="Elena">Elena</h4>
@@ -146,10 +142,10 @@
                 creatividad y entusiasmo por la resolución de problemas la
                 empujrecortaaaaaaar<br />
                 <span class="icons">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-github-alt"></i>
-                  <i class="fas fa-envelope"></i>
+                  <a href="#" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                  <a href="#" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/elemarmar" target="_blank"><i class="fab fa-github-alt"></i></a>
+                  <a href="mailto:elemartinezmarin@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </span>
               </p>
             </div>
@@ -158,7 +154,7 @@
           <!-- Mari Andre -->
           <article class="adalaber" id="mariandre">
             <div class="zoom-in">
-              <img src="images/corina.jpeg" alt="Corina foto" />
+              <img src="images/corina.jpeg" alt="MariAndre foto" />
             </div>
             <div class="information">
               <h4 id="Mari-Andre">MariAndre</h4>
@@ -169,10 +165,10 @@
                 incluso solo una vez en sus vidas, y para mi ahora, eso es
                 programar.<br />
                 <span class="icons">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-github-alt"></i>
-                  <i class="fas fa-envelope"></i>
+                  <a href=" https://twitter.com/soymariandre" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                  <a href="www.linkedin.com/in/soymariandre" target="_blank"> <i class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/soymariandre" target="_blank"><i class="fab fa-github-alt"></i></a>
+                  <a href="mailto:soymariandre@gmail.com" target="_blank"> <i class=" fas fa-envelope"></i></a>
                 </span>
               </p>
             </div>
@@ -181,7 +177,7 @@
           <!-- Mercedes -->
           <article class="adalaber" id="mercedes">
             <div class="zoom-in">
-              <img src="images/sara3.jpeg" alt="Sara foto" />
+              <img src="./images/mercedes.jpg" alt="Mercedes foto" />
             </div>
             <div class="information">
               <h4>Mercedes</h4>
@@ -192,10 +188,11 @@
                 un día de perros?. Familiar y trabajadora. Si una puerta se
                 cierra otra se abre.<br />
                 <span class="icons">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-github-alt"></i>
-                  <i class="fas fa-envelope"></i>
+                  <a href="https://twitter.com/fotomercar" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                  <a href="https://es.linkedin.com/in/mercedes-carballal-5339735b" target="_blank"> <i
+                      class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/mercarf" target="_blank"><i class="fab fa-github-alt"></i></a>
+                  <a href="mailto:mcarballalfr@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
                 </span>
               </p>
             </div>
@@ -209,47 +206,47 @@
             <div class="information">
               <h4 id="Sara">Sara</h4>
               <p>
-                Front-end developer. Translator and Interpreter (ES-EN-FR).
-                Failed yogui. From the center of Spain. My best weekend plan is
-                playing board-games, reading, coding and meeting friends. Animal
-                lover and vegan cooking geek.<br />
+                Desarrolladora front-end. Traductora e Intérprete (ES-EN-FR).
+                Yogui fallida. Siempre quiero hacer muchas cosas a la vez. Mi plan ideal de fin de semana es jugar a
+                juegos de mesa, leer, picar código y quedar con amigos (muy original, vaya). Friki de la cocina
+                vegana.<br />
                 <span class="icons">
-                  <i class="fab fa-twitter"></i>
-                  <i class="fab fa-linkedin-in"></i>
-                  <i class="fab fa-github-alt"></i>
-                  <i class="fas fa-envelope"></i>
+                  <a href="https://twitter.com/Sara_and_code" target="_blank"> <i class="fab fa-twitter"></i> </a>
+                  <a href="https://es.linkedin.com/in/sara-alite-villodre-10055918a" target="_blank"> <i
+                      class="fab fa-linkedin-in"></i></a>
+                  <a href="https://github.com/saraalite" target=" _blank"><i class=" fab fa-github-alt"></i></a>
+                  <a href="mailto:saraalite@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+
                 </span>
               </p>
             </div>
           </article>
         </div>
       </section>
-    </main>
+    </div>
+  </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <!-- Span class block? -->
-      <span class="copy">nombre del equipo &copy;2019</span>
-      <div class="container-logo">
-        <img
-          class="logo-adalab"
-          src="images/logo-adalab.png"
-          alt="Logo de Adalab"
-        />
-      </div>
-      <nav>
-        <ul class="footer-menu">
-          <li>
-            <a href="">EQUIPO</a>
-          </li>
-          <li>
-            <a href="">QUIÉNES SOMOS</a>
-          </li>
-          <li>
-            <a href="">CONTACTO</a>
-          </li>
-        </ul>
-      </nav>
-    </footer>
-  </body>
+  <!-- FOOTER -->
+  <footer class="footer section">
+    <!-- Span class block? -->
+    <span class="copy">nombre del equipo &copy;2019</span>
+    <div class="container-logo">
+      <img class="logo-adalab" src="images/logo-adalab.png" alt="Logo de Adalab" />
+    </div>
+    <nav>
+      <ul class="footer-menu">
+        <li>
+          <a href="">EQUIPO</a>
+        </li>
+        <li>
+          <a href="">QUIÉNES SOMOS</a>
+        </li>
+        <li>
+          <a href="">CONTACTO</a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+
 </html>
