@@ -10,10 +10,11 @@
 
 /* reset */
 html,
-body {
+body, h4, p {
   margin: 0;
   padding: 0;
 }
+
 
 * {
   box-sizing: border-box;
@@ -30,10 +31,20 @@ p {
   color: var(--dark-background);
   font-family: "Open Sans";
   font-size: 16px;
-  text-align: center;
+  /* text-align: center; */
   line-height: 24px;
   /* Creo que si todos los párrafos tienen el mismo estilo deberíamos cambiar el elemento pero podemos preguntar. Si no, una misma clase para los que sean iguales */
 }
+
+h3 {
+  color: var(--primary);
+  font-size: 24px;
+  font-family: "Rubik";
+  font-weight: 500;
+  text-align: center;
+}
+
+/*-------------------------------------*/
 
 /* Header */
 .header {
@@ -110,7 +121,8 @@ p {
   position: absolute;
   left: 0;
   right: 0;
-  top: 45%;
+  top: 50%;
+  transform: translate(0, -50%);
   text-align: center;
 }
 
@@ -126,27 +138,23 @@ p {
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.slideshow-container img:nth-of-type(4) {
+.slideshow-container a:nth-of-type(4)  img{
   z-index: 1;
 }
 
-.slideshow-container img:nth-of-type(3) {
+.slideshow-container a:nth-of-type(3) img {
   z-index: 2;
 }
 
 .claim {
-  /* He puesto el tamaño de Zeplin pero tenemos que saber si es fluid o fijo*/
   width: 290px;
   height: 80px;
-  /* Esto hace que se centre  */
   margin: auto;
   padding: 15px;
-  /* Esto hace que la caja sea relativa a la sección de Hero y me permite poder ponerla encima. bottom, left, right colocan la imagen relativa a Hero */
   position: absolute;
   bottom: -50px;
   left: 0;
   right: 0;
-  /* Según lo que he visto, en la versión mobile toooodooo el texto está centrado, así que sería mejor poner "text-align: center" en el body o un contenedor para que afecte a todos los elementos y no tengamos que repetir código */
   text-align: center;
   font-family: "Open Sans";
   font-size: 18px;
@@ -168,6 +176,7 @@ p {
   line-height: 45px;
   text-align: center;
   padding-top: 30px;
+  font-weight: 500;
 }
 
 .skills {
@@ -192,41 +201,156 @@ p {
   color: var(--primary);
   font-size: 22px;
   line-height: 45px;
+  font-weight: 500;
   text-align: center;
 }
 
-/* About Us */
+/* About Us */ 
+/* Last edit: Elena jueves 28 Mayo */
+.us {
+  max-width: 767px;
+  margin: auto;
+}
 
-.us-title {
-  color: var(--primary);
-  font-size: 24px;
-  font-family: "Rubik";
-  line-height: 45px;
-  text-align: center;
+.us > h3 {
+  margin: 30px 0;
+}
+
+.adalaber {
+  max-width: 767px;
+  display: flex;
+  flex-direction: column;
+  /* NOTA: Recordad que al poner flex-direction: column, el main axis pasa a ser vertical y por lo tanto para centrar los elementos tenemos que utilizar ALIGN-ITEMS y no justify-items */
+  align-items: center;
+  margin-bottom: 45px;
 }
 
 .adalaber h4 {
   color: var(--black);
   font-size: 20px;
   font-family: "Open Sans";
-  line-height: 45px;
-  text-align: center;
 }
-
-/* Creo que con tener una clase para las fotos serviría */
 
 .adalaber img {
-  margin: auto;
-  display: block;
+  height: 180px;
+  width: 180px;
+  border-radius: 4px;
 }
 
+.information {
+  max-width: 443px;
+  text-align: center;
+  margin-top: 15px;
+}
 .icons {
+  display: inline-block;
   text-align: center;
   color: var(--primary);
+  margin-top: 15px;
 }
 
 i.fab:after {
-  content: "·";
+  content: " ·";
 }
 
 /* Footer */
+
+
+/* Tablet version */
+/* Last edit: Elena jueves 28 Mayo */
+@media all and (min-width:768px) {
+
+  /*** Hero Section ***/
+  .slideshow-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+
+  .slideshow-container img {
+    width: 200px;
+    margin: -40px;
+    position: relative;
+  }
+  
+  .claim {
+    width: 441px;
+    margin: 0;
+    left: 46px;
+    bottom: 0;
+    background-color: rgba(255,255,255, 0.8);
+  }
+
+  /*** About Us Section ***/
+  .us > h3 {
+    margin: 45px 0 41px;
+  }
+
+  .adalaber {
+    /* Make flex items sit next to each other */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 45px 60px;
+  }
+
+  /* Place even images to the right */
+  .adalaber:nth-of-type(even) {
+    flex-direction: row-reverse;
+  }
+  
+  /* Align even information to the right */
+  .adalaber:nth-of-type(even) .information {
+    text-align: right;
+  }
+
+  /* Align odd information to the left */
+  .adalaber:nth-of-type(odd) .information {
+    text-align: left;
+  }
+
+  .information {
+    max-width: 445px;
+    margin-top: 0;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .adalaber img {
+    height: 205px;
+    width: 205px;
+  }
+}
+
+/* TESTS */
+article:target {
+  animation: highlight 1.5s;
+}
+
+@keyframes highlight {
+  from {
+    background-color: rgba(99,214,196,.5);
+  }
+}
+
+.zoom-in {
+  overflow: hidden;
+  border-radius: 4px;
+}
+.zoom-in img {
+  transition: transform 1s ease;
+}
+.zoom-in:hover img {
+  transform: scale(1.5);
+}  
+
+/* article:target img {
+  animation: zoomout .5s;
+
+}
+
+@keyframes zoomout {
+  from {
+    transform: scale(1.2);
+  }
+} */

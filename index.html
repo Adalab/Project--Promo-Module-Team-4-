@@ -9,7 +9,6 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik:Medium|Open+Sans" />
 
   <!-- Awesome Fonts -->
-  <!-- Aquí va el link a Awesome fonts que utilizaremos para iconos -->
   <script src="https://kit.fontawesome.com/d000050c19.js" crossorigin="anonymous"></script>
 
   <!-- Our Stylesheet -->
@@ -45,11 +44,11 @@
 
       <!-- Slideshow -->
       <div class="slideshow-container">
-        <img src="images/1.png" />
-        <img src="images/2.png" />
-        <img src="images/3.png" />
-        <img src="images/4.png" />
-        <img src="images/5.png" />
+        <a href="#corina"><img src="images/1.png"></a>
+        <a href="#elena"><img src="images/2.png"></a>
+        <a href="#mariandre"><img src="images/3.png"></a>
+        <a href="#mercedes"><img src="images/4.png"></a>
+        <a href="#sara"><img src="images/5.png"></a>
       </div>
       <aside class="claim">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -98,12 +97,14 @@
 
     <!-- ABOUT US -->
     <section class="us">
-      <h3 class="us-title">QUIÉNES SOMOS</h3>
+      <!-- <h3 class="us-title">QUIÉNES SOMOS</h3> -->
+      <!-- Es igual que el de "EQUIPO" así que yo no pondría clase -->
+      <h3>QUIÉNES SOMOS</h3>
       <div>
         <!-- Corina -->
-        <article class="adalaber">
-          <img src="images/corina.jpeg" alt="Corina foto" width="180px" height="180px" />
-          <div>
+        <article class="adalaber" id="corina">
+          <div class="zoom-in"><img src="images/corina.jpeg" alt="Corina foto"></div>
+          <div class="information">
             <h4>Corina</h4>
             <p>
               Ciudadana europea. Curiosa y positiva. Me gusta viajar y
@@ -121,18 +122,16 @@
         </article>
 
         <!-- Elena -->
-        <article class="adalaber">
-          <img src="" alt="Elena foto" width="180px" height="180px" />
-          <div>
-            <h4>Elena</h4>
+        <article class="adalaber" id="elena">
+          <div class="zoom-in"><img src="images/sara3.jpeg" alt="Sara foto"></div>
+          <div class="information">
+            <h4 id="Elena">Elena</h4>
             <p>
               Elena es una ferviente defensora del aprendizaje continuo. Una
               joven con trasfondo en relaciones internacionales, un buen
               manejo de idiomas y un gran interés por la física. Su
               creatividad y entusiasmo por la resolución de problemas la
-              empujaron al mundo del desarrollo web, donde espera dedicarse a
-              las cosas que mejor se le dan: crear, resolver problemas y
-              aprender.<br />
+              empujrecortaaaaaaar<br />
               <span class="icons">
                 <i class="fab fa-twitter"></i>
                 <i class="fab fa-linkedin-in"></i>
@@ -144,10 +143,10 @@
         </article>
 
         <!-- Mari Andre -->
-        <article class="adalaber">
-          <img src="" alt="MariAndre foto" width="180px" height="180px" />
-          <div>
-            <h4>MariAndre</h4>
+        <article class="adalaber" id="mariandre">
+          <div class="zoom-in"><img src="images/corina.jpeg" alt="Corina foto"></div>
+          <div class="information">
+            <h4 id="Mari-Andre">MariAndre</h4>
             <p>
               Crear es la mejor parte de mi día, no importa lo que sea, me
               encanta ser creativa. También amo la música y bailar. Creo que
@@ -165,9 +164,9 @@
         </article>
 
         <!-- Mercedes -->
-        <article class="adalaber">
-          <img src="" alt="Mercedes foto" width="180px" height="180px" />
-          <div>
+        <article class="adalaber" id="mercedes">
+          <div class="zoom-in"><img src="images/sara3.jpeg" alt="Sara foto"></div>
+          <div class="information">
             <h4>Mercedes</h4>
             <p>
               Formada como ingeniera topógrafa. Siempre buscando la forma de
@@ -186,10 +185,10 @@
         </article>
 
         <!-- Sara -->
-        <article class="adalaber">
-          <img src="images/sara3.jpeg" alt="Sara foto" width="180px" height="180px" />
-          <div>
-            <h4>Sara</h4>
+        <article class="adalaber" id="sara">
+          <div class="zoom-in"><img src="images/sara3.jpeg" alt="Sara foto"></div>
+          <div class="information">
+            <h4 id="Sara">Sara</h4>
             <p>
               Front-end developer. Translator and Interpreter (ES-EN-FR).
               Failed yogui. From the center of Spain. My best weekend plan is
