@@ -10,11 +10,12 @@
 
 /* reset */
 html,
-body, h4, p {
+body,
+h4,
+p {
   margin: 0;
   padding: 0;
 }
-
 
 * {
   box-sizing: border-box;
@@ -138,7 +139,7 @@ h3 {
   text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
-.slideshow-container a:nth-of-type(4)  img{
+.slideshow-container a:nth-of-type(4) img {
   z-index: 1;
 }
 
@@ -205,7 +206,7 @@ h3 {
   text-align: center;
 }
 
-/* About Us */ 
+/* About Us */
 /* Last edit: Elena jueves 28 Mayo */
 .us {
   max-width: 767px;
@@ -255,11 +256,59 @@ i.fab:after {
 
 /* Footer */
 
+.footer {
+  border: 2px solid red;
+  background-color: var(--white);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer-menu {
+  list-style-type: none;
+  padding: 0px;
+  text-align: center;
+  color: var(--black);
+  order: 1;
+}
+
+.footer-menu li {
+}
+
+.footer-menu a {
+  display: inline-block;
+  padding: 12px;
+  font-family: "OpenSans-Semibold", Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.copy {
+  margin-bottom: 20px;
+  margin-top: 30px;
+  order: 0;
+  display: inline-block;
+  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  text-align: center;
+  color: var(--cool-grey);
+}
+
+.container-logo {
+  margin-top: 30px;
+  margin-bottom: 45px;
+  order: 2;
+}
+
+.logo-adalab {
+  width: 116px;
+}
 
 /* Tablet version */
 /* Last edit: Elena jueves 28 Mayo */
-@media all and (min-width:768px) {
-
+@media all and (min-width: 768px) {
   /*** Hero Section ***/
   .slideshow-container {
     position: absolute;
@@ -273,13 +322,13 @@ i.fab:after {
     margin: -40px;
     position: relative;
   }
-  
+
   .claim {
     width: 441px;
     margin: 0;
     left: 46px;
     bottom: 0;
-    background-color: rgba(255,255,255, 0.8);
+    background-color: rgba(255, 255, 255, 0.8);
   }
 
   /*** About Us Section ***/
@@ -299,7 +348,7 @@ i.fab:after {
   .adalaber:nth-of-type(even) {
     flex-direction: row-reverse;
   }
-  
+
   /* Align even information to the right */
   .adalaber:nth-of-type(even) .information {
     text-align: right;
@@ -313,7 +362,7 @@ i.fab:after {
   .information {
     max-width: 445px;
     margin-top: 0;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
   }
 
   .adalaber img {
@@ -329,7 +378,7 @@ article:target {
 
 @keyframes highlight {
   from {
-    background-color: rgba(99,214,196,.5);
+    background-color: rgba(99, 214, 196, 0.5);
   }
 }
 
@@ -342,7 +391,7 @@ article:target {
 }
 .zoom-in:hover img {
   transform: scale(1.5);
-}  
+}
 
 /* article:target img {
   animation: zoomout .5s;
