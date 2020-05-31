@@ -1,7 +1,7 @@
-/* .wrapper {
+.wrapper {
   max-width: 767px;
   margin: auto;
-} */
+}
 
 :root {
   --background: #f1f1f1;
@@ -36,7 +36,7 @@ body {
 
 p {
   color: var(--dark-background);
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   line-height: 24px;
 }
@@ -44,7 +44,7 @@ p {
 h3 {
   color: var(--primary);
   font-size: 24px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-weight: 500;
   text-align: center;
   padding-bottom: 10px;
@@ -173,7 +173,7 @@ h3 {
   left: 0;
   right: 0;
   text-align: center;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   font-size: 18px;
   font-weight: 600;
   color: var(--black);
@@ -184,7 +184,7 @@ h3 {
 .team-title {
   color: var(--secondary);
   font-size: 24px;
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   line-height: 45px;
   text-align: center;
   font-weight: 500;
@@ -211,7 +211,7 @@ h3 {
 }
 
 .skills h3 {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   color: var(--primary);
   font-size: 22px;
   font-weight: 500;
@@ -239,7 +239,7 @@ h3 {
 .adalaber h4 {
   color: var(--black);
   font-size: 20px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", sans-serif;
   padding-bottom: 10px;
 }
 
@@ -270,53 +270,56 @@ i.fab:after {
 /* Footer */
 
 .footer {
-  border: 2px solid red;
+  border-top: solid 1px var(--light-background);
   background-color: var(--white);
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-menu {
-  list-style-type: none;
-  padding: 0px;
-  text-align: center;
-  color: var(--black);
-  order: 1;
-}
-
-.footer-menu li {
-}
-
-.footer-menu a {
-  display: inline-block;
-  padding: 12px;
-  font-family: "OpenSans-Semibold", Arial, Helvetica, sans-serif;
-  font-size: 16px;
 }
 
 .copy {
-  margin-bottom: 20px;
-  margin-top: 30px;
-  order: 0;
   display: inline-block;
-  font-family: OpenSans, Arial, Helvetica, sans-serif;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  width: 172px;
+  height: 20px;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
   text-align: center;
-  color: var(--cool-grey);
+  color: var(--light-background);
 }
 
 .container-logo {
   margin-top: 30px;
   margin-bottom: 45px;
-  order: 2;
+  display: inline-block;
+  width: 115.9px;
 }
 
-.logo-adalab {
-  width: 116px;
+.menu-footer {
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-footer a {
+  width: 114px;
+  height: 60px;
+  opacity: 0.75;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.43;
+  letter-spacing: normal;
+  text-align: center;
+  color: var(--dark-background);
+}
+
+.container-logo img {
+  width: 100%;
 }
 
 /* MEDIA QUERIES */
@@ -426,6 +429,41 @@ i.fab:after {
 
   .rectangle {
     transform: translateY(-75px) rotate(45deg);
+  }
+
+  /*** FOOTER ***/
+  .container-footer {
+    position: relative;
+    text-align: left;
+  }
+
+  .copy {
+    margin-top: 30px;
+    margin-left: 45px;
+    text-align: left;
+  }
+
+  .container-logo {
+    margin-top: 15px;
+    margin-bottom: 60px;
+    margin-left: 45px;
+  }
+
+  .menu-footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+    margin-top: 24px;
+    margin-bottom: 56px;
+    margin-right: 45px;
+  }
+
+  .menu-footer a {
+    width: 324px;
+    height: 90px;
+    line-height: 2.14;
+    text-align: right;
   }
 }
 
