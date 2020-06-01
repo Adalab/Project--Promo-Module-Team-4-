@@ -367,6 +367,7 @@ footer .wrapper.section {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: space-between;
+    padding-right: 45px;
   }
 
   .header nav {
