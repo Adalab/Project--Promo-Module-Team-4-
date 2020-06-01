@@ -9,12 +9,16 @@
   --black: #000000;
 
   /* Fonts */
-  --general-font: 'Open Sans', sans-serif;
-  --special-font: 'Rubik', sans-serif;
+  --general-font: "Open Sans", sans-serif;
+  --special-font: "Rubik", sans-serif;
 }
 
 /* reset */
-html, body, h4, h3, p {
+html,
+body,
+h4,
+h3,
+p {
   margin: 0;
   padding: 0;
 }
@@ -24,13 +28,13 @@ html, body, h4, h3, p {
   list-style-type: none;
   text-decoration: none;
 }
+
 /* end of reset */
 
 /* General */
 body {
   text-align: center;
   font-family: var(--general-font);
-  
 }
 
 p {
@@ -57,7 +61,6 @@ h3 {
   margin: auto;
 }
 
-
 /*-------------------------------------*/
 
 /* Header */
@@ -67,7 +70,6 @@ h3 {
   position: absolute;
   z-index: 10;
   width: 100%;
-  
 }
 .header .wrapper {
   display: flex;
@@ -79,7 +81,7 @@ h3 {
   text-align: center;
   padding: 15px 0;
 }
-.header  a {
+.header a {
   font-family: var(--special-font);
   font-stretch: normal;
   font-style: normal;
@@ -89,13 +91,12 @@ h3 {
   color: var(--white);
   line-height: 1.88;
   padding: 5px;
-  transition: .8s color;
+  transition: 0.8s color;
 }
 
 .header-name a:hover {
   color: var(--secondary);
 }
-
 
 .header nav {
   background-color: var(--secondary);
@@ -106,6 +107,7 @@ h3 {
 .header ul {
   margin: 0;
   height: 100%;
+  padding: 0;
 }
 .header-menu {
   display: flex;
@@ -113,7 +115,6 @@ h3 {
   padding: 0 15px;
   font-family: var(--special-font);
   font-size: 15px;
-
 }
 
 .header-menu li {
@@ -121,7 +122,7 @@ h3 {
   align-self: stretch;
   height: 100%;
   flex: 1 1 auto;
-  transition: .8s background-color;
+  transition: 0.8s background-color;
 }
 
 .header-menu a {
@@ -129,9 +130,10 @@ h3 {
   padding: 0 15px;
   display: block;
   height: 100%;
+  font-size: 13px;
 }
 .header-menu li:hover {
-  background-color:  var(--primary);
+  background-color: var(--primary);
 }
 
 /* Hero */
@@ -164,7 +166,7 @@ h3 {
   width: 90px;
   margin: -20px;
   position: relative;
-  transition: .5s transform;
+  transition: 0.5s transform;
 }
 
 .slideshow-container img:hover {
@@ -196,7 +198,7 @@ h3 {
   color: var(--black);
   background-color: var(--white);
   text-align: center;
-vertical-align: middle;
+  vertical-align: middle;
 }
 
 /* Team */
@@ -214,7 +216,6 @@ vertical-align: middle;
   position: relative;
 }
 
-
 .skills:before {
   content: "";
   width: 30px;
@@ -226,7 +227,6 @@ vertical-align: middle;
   margin: auto;
   position: absolute;
 }
-
 
 .skills article:nth-of-type(2) {
   margin-top: 30px;
@@ -284,7 +284,7 @@ vertical-align: middle;
 
 .icons a {
   color: var(--primary);
-  transition: .8s color;
+  transition: 0.8s color;
 }
 
 .icons a:hover {
@@ -305,7 +305,6 @@ i.fab:after {
 footer .wrapper.section {
   padding-top: 30px;
 }
-
 
 .copy {
   display: inline-block;
@@ -369,7 +368,6 @@ footer .wrapper.section {
     flex-wrap: nowrap;
     align-items: stretch;
     justify-content: space-between;
- 
   }
 
   .header nav {
@@ -380,7 +378,7 @@ footer .wrapper.section {
     width: 50%;
     height: 100%;
     padding: 0;
-    padding-left: 60px;
+    padding-left: 45px;
     text-align: left;
   }
   .header-name a {
@@ -388,7 +386,6 @@ footer .wrapper.section {
     height: 100%;
     line-height: 60px;
     padding: 0 15px;
-
   }
   .header-menu {
     justify-content: flex-end;
@@ -397,16 +394,19 @@ footer .wrapper.section {
   .header nav {
     height: 60px;
   }
-  
+
+  .header-menu li {
+    padding: 0;
+    flex-grow: 0;
+  }
   .header-menu a {
     line-height: 60px;
   }
 
   .header-menu a:hover {
     background-color: var(--secondary);
-    transition: .8s background-color;
+    transition: 0.8s background-color;
   }
-
 
   /*** HERO SECTION ***/
   .hero {
@@ -437,7 +437,6 @@ footer .wrapper.section {
     padding: 0;
     border-radius: 4px 4px 0 0;
   }
-  
 
   /*** About Us Section ***/
   .us > h3 {
@@ -472,7 +471,6 @@ footer .wrapper.section {
     margin-top: 0;
   }
 
-
   .adalaber img {
     height: 205px;
     width: 205px;
@@ -498,14 +496,10 @@ footer .wrapper.section {
     margin-top: 0;
   }
 
-
   /*** FOOTER ***/
-
-
   .container-footer {
     position: relative;
     text-align: left;
-  
   }
 
   .copy {
@@ -534,16 +528,6 @@ footer .wrapper.section {
 }
 
 /* TESTS */
-article:target {
-  animation: highlight 1.5s;
-}
-
-@keyframes highlight {
-  from {
-    background-color: rgba(99, 214, 196, 0.5);
-  }
-}
-
 .zoom-in {
   overflow: hidden;
   border-radius: 4px;
@@ -554,16 +538,3 @@ article:target {
 .zoom-in:hover img {
   transform: scale(1.3);
 }
-
-/* article:target img {
-  animation: zoomout .5s;
-
-}
-
-@keyframes zoomout {
-  from {
-    transform: scale(1.2);
-  }
-} */
-
-
