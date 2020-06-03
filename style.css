@@ -526,6 +526,30 @@ footer .wrapper.section {
     text-align: right;
   }
 }
+@media all and (min-width: 1200px){
+  .wrapper{
+    max-width: 1200px;
+  }
+
+  /* Header */
+
+  
+  /* Hero */
+
+
+
+  /*About us */
+
+  .adalaber img {
+    height: 278px;
+    width: 278px;
+  }
+
+
+  /* .. */
+}
+
+
 
 /* TESTS */
 .zoom-in {
