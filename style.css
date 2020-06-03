@@ -535,7 +535,11 @@ footer .wrapper.section {
 
   
   /* Hero */
-
+  .hero {
+    height: 550px;
+    margin-bottom: 45px;
+  }
+  
 
 
   /*About us */
