@@ -146,7 +146,7 @@ h3 {
 }
 
 /* Slideshow */
-.special {
+.hero-wrapper {
   position: relative;
   height: 100%;
   max-width: 767px;
@@ -539,6 +539,16 @@ footer .wrapper.section {
     height: 550px;
     margin-bottom: 45px;
   }
+
+  /* Slideshow */
+.hero-wrapper {
+  max-width: 1200px;
+}
+
+.slideshow-container img {
+  width: 250px;
+  margin: -40px;
+}
   
 
 
