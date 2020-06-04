@@ -228,13 +228,13 @@ h3 {
   border: 1px solid blue;
 }
 
-.adalaber:target::before {
-  content: "";
-  display: block;
-  height: 200px;
-  margin: -200px 0 0;
-  border: 3px solid yellow;
-}
+// .adalaber:target::before {
+//   content: "";
+//   display: block;
+//   height: 200px;
+//   margin: -200px 0 0;
+//   border: 3px solid yellow;
+// }
 
 .skills {
   position: relative;
@@ -599,6 +599,23 @@ footer .wrapper.section {
   .adalaber img {
     height: 278px;
     width: 278px;
+  }
+  .adalaber:nth-of-type(even) {
+    justify-content: flex-start;
+  }
+
+  .adalaber .information:nth-of-type(even) {
+    padding-right: 45px;
+  }
+
+  .adalaber:nth-of-type(odd) {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .adalaber .information:nth-of-type(odd) {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 45px;
   }
 }
 
