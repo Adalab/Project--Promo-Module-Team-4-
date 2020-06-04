@@ -135,10 +135,6 @@ h3 {
 .header-menu li:hover {
   background-color: var(--primary);
 }
-.main {
-  position: relative;
-  top: 105px;
-}
 
 /* Hero */
 
@@ -214,6 +210,17 @@ h3 {
   text-align: center;
   font-weight: 500;
 }
+
+
+/* MAGIC TRICK */
+:target::before {
+  content: "";
+  display: block;
+  height: 120px; 
+  margin: -120px 0 0; 
+  border: 1px solid blue;
+}  
+
 
 .skills {
   background-color: rgba(184, 184, 185, 0.2);
@@ -413,10 +420,7 @@ footer .wrapper.section {
     background-color: var(--secondary);
     transition: 0.8s background-color;
   }
-  .main {
-    top: 60px;
-  }
-
+ 
   /*** HERO SECTION ***/
   .hero {
     margin-bottom: 0;
