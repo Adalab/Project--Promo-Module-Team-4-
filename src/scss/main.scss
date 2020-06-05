@@ -42,17 +42,17 @@ p {
 /* General */
 body {
   text-align: center;
-  font-family: var(--general-font);
+  font-family: $general-font;
 }
 
 p {
-  color: var(--dark-background);
+  color: $dark-background;
   font-size: 16px;
   line-height: 24px;
 }
 
 h3 {
-  color: var(--primary);
+  color: $primary;
   font-size: 24px;
   font-family: "Rubik", sans-serif;
   font-weight: 500;
@@ -73,7 +73,7 @@ h3 {
 
 /* Header */
 .header {
-  background-color: var(--primary);
+  background-color: $primary;
   opacity: 0.95;
   position: fixed;
   top: 0;
@@ -91,24 +91,24 @@ h3 {
   padding: 15px 0;
 }
 .header a {
-  font-family: var(--special-font);
+  font-family: $special-font;
   font-stretch: normal;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: normal;
-  color: var(--white);
+  color: $white;
   line-height: 1.88;
   padding: 5px;
   transition: 0.8s color;
 }
 
 .header-name a:hover {
-  color: var(--secondary);
+  color: $secondary;
 }
 
 .header nav {
-  background-color: var(--secondary);
+  background-color: $secondary;
   width: 100%;
   height: 45px;
 }
@@ -121,7 +121,7 @@ h3 {
   display: flex;
   align-items: stretch;
   padding: 0 15px;
-  font-family: var(--special-font);
+  font-family: $special-font;
   font-size: 15px;
 }
 
@@ -141,7 +141,7 @@ h3 {
   font-size: 15px;
 }
 .header-menu li:hover {
-  background-color: var(--primary);
+  background-color: $primary;
 }
 
 /* Hero */
@@ -203,17 +203,17 @@ h3 {
   text-align: center;
   font-size: 18px;
   font-weight: 600;
-  color: var(--black);
-  background-color: var(--white);
+  color: $black;
+  background-color: $white;
   text-align: center;
   vertical-align: middle;
 }
 
 /* Team */
 .team-title {
-  color: var(--secondary);
+  color: $secondary;
   font-size: 24px;
-  font-family: var(--special-font);
+  font-family: $special-font;
   line-height: 45px;
   text-align: center;
   font-weight: 500;
@@ -246,7 +246,7 @@ h3 {
   width: 30px;
   height: 30px;
   transform: translateY(-60px) rotate(45deg);
-  background-color: var(--white);
+  background-color: $white;
   left: 0;
   right: 0;
   margin: auto;
@@ -258,8 +258,8 @@ h3 {
 }
 
 .skills h3 {
-  font-family: var(--special-font);
-  color: var(--primary);
+  font-family: $special-font;
+  color: $primary;
   font-size: 22px;
   font-weight: 500;
   text-align: center;
@@ -283,7 +283,7 @@ h3 {
 }
 
 .adalaber h4 {
-  color: var(--black);
+  color: $black;
   font-size: 20px;
   padding-bottom: 10px;
 }
@@ -302,18 +302,18 @@ h3 {
 .icons {
   display: inline-block;
   text-align: center;
-  color: var(--primary);
+  color: $primary;
   margin-top: 20px;
   word-spacing: 3px;
 }
 
 .icons a {
-  color: var(--primary);
+  color: $primary;
   transition: 0.8s color;
 }
 
 .icons a:hover {
-  color: var(--black);
+  color: $black;
 }
 
 i.fab:after {
@@ -323,8 +323,8 @@ i.fab:after {
 /* Footer */
 
 .footer {
-  border-top: solid 1px var(--light-background);
-  background-color: var(--white);
+  border-top: solid 1px $light-background;
+  background-color: $white;
 }
 
 footer .wrapper.section {
@@ -342,7 +342,7 @@ footer .wrapper.section {
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: var(--light-background);
+  color: $light-background;
 }
 
 .container-logo {
@@ -368,7 +368,7 @@ footer .wrapper.section {
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: var(--dark-background);
+  color: $dark-background;
 }
 
 .container-logo img {
@@ -397,7 +397,7 @@ footer .wrapper.section {
   }
 
   .header nav {
-    background-color: var(--primary);
+    background-color: $primary;
     height: 100%;
   }
   .header-name {
@@ -431,7 +431,7 @@ footer .wrapper.section {
   }
 
   .header-menu a:hover {
-    background-color: var(--secondary);
+    background-color: $secondary;
     transition: 0.8s background-color;
   }
 
