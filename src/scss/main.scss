@@ -1,25 +1,10 @@
-@import "core/variables";
-@import "core/reset";
-@import "components/links";
-@import "layout/page";
-@import "layout/header";
-@import "layout/footer";
-@import "pages/index";
-
-:root {
-  /* Colors */
-  --background: #f1f1f1;
-  --white: #ffffff;
-  --light-background: #b8b8b9;
-  --secondary: #14d9c4;
-  --primary: #099d8d;
-  --dark-background: #54585a;
-  --black: #000000;
-
-  /* Fonts */
-  --general-font: "Open Sans", sans-serif;
-  --special-font: "Rubik", sans-serif;
-}
+@import 'core/variables';
+@import 'core/reset';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/footer';
+@import 'pages/index';
 
 /* reset */
 html,
@@ -54,7 +39,7 @@ p {
 h3 {
   color: $primary;
   font-size: 24px;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: 500;
   text-align: center;
   padding-bottom: 10px;
@@ -221,7 +206,7 @@ h3 {
 
 /* MAGIC TRICK */
 :target::before {
-  content: "";
+  content: '';
   display: block;
   height: 120px;
   margin: -120px 0 0;
@@ -242,7 +227,7 @@ h3 {
 }
 
 .skills:before {
-  content: "";
+  content: '';
   width: 30px;
   height: 30px;
   transform: translateY(-60px) rotate(45deg);
@@ -317,7 +302,7 @@ h3 {
 }
 
 i.fab:after {
-  content: " ·";
+  content: ' ·';
 }
 
 /* Footer */
