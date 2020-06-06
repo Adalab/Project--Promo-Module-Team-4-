@@ -72,77 +72,7 @@
   /*-------------------------------------*/
   
   /* Header */
-  .header {
-    background-color: var(--primary);
-    opacity: 0.95;
-    position: fixed;
-    top: 0;
-    z-index: 10;
-    width: 100%;
-  }
-  .header .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
   
-  .header-name {
-    width: 100%;
-    text-align: center;
-    padding: 15px 0;
-  }
-  .header a {
-    font-family: var(--special-font);
-    font-stretch: normal;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: normal;
-    color: var(--white);
-    line-height: 1.88;
-    padding: 5px;
-    transition: 0.8s color;
-  }
-  
-  .header-name a:hover {
-    color: var(--secondary);
-  }
-  
-  .header nav {
-    background-color: var(--secondary);
-    width: 100%;
-    height: 45px;
-  }
-  .header ul {
-    margin: 0;
-    height: 100%;
-    padding: 0;
-  }
-  .header-menu {
-    display: flex;
-    align-items: stretch;
-    padding: 0 15px;
-    font-family: var(--special-font);
-    font-size: 15px;
-  }
-  
-  .header-menu li {
-    display: inline-block;
-    align-self: stretch;
-    height: 100%;
-    flex: 1 1 auto;
-    transition: 0.8s background-color;
-  }
-  
-  .header-menu a {
-    line-height: 45px;
-    padding: 0 6px;
-    display: block;
-    height: 100%;
-    font-size: 15px;
-  }
-  .header-menu li:hover {
-    background-color: var(--primary);
-  }
   
   /* Hero */
   
@@ -375,60 +305,7 @@
     .section {
       padding: 60px 45px;
     }
-  
-    /**** HEADER ****/
-  
-    .header {
-      height: 60px;
-    }
-  
-    .header .wrapper {
-      flex-direction: row;
-      flex-wrap: nowrap;
-      align-items: stretch;
-      justify-content: space-between;
-      padding-right: 45px;
-    }
-  
-    .header nav {
-      background-color: var(--primary);
-      height: 100%;
-    }
-    .header-name {
-      width: 50%;
-      height: 100%;
-      padding: 0;
-      padding-left: 45px;
-      text-align: left;
-    }
-    .header-name a {
-      display: block;
-      height: 100%;
-      line-height: 60px;
-      padding: 0;
-    }
-    .header-menu {
-      justify-content: flex-end;
-    }
-  
-    .header nav {
-      height: 60px;
-    }
-  
-    .header-menu li {
-      padding: 0;
-      flex-grow: 0;
-    }
-    .header-menu a {
-      line-height: 60px;
-      padding: 0 9px;
-    }
-  
-    .header-menu a:hover {
-      background-color: var(--secondary);
-      transition: 0.8s background-color;
-    }
-   
+    
     /*** HERO SECTION ***/
     .hero {
       margin-bottom: 0;
@@ -552,21 +429,6 @@
       max-width: 1200px;
     }
   
-    /* Header */
-    .header {
-      height: 60px;
-    }
-  
-    .header .wrapper {
-      padding-right: 138px;
-      max-width: 1200px;
-    }
-    .header-name {
-      padding-left: 142px;
-    }
-    .header-menu a {
-      padding: 0 10px;
-    }
     /* Hero */
     .hero {
       height: 550px;
