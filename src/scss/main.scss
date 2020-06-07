@@ -3,6 +3,7 @@
 @import 'components/links';
 @import 'layout/page';
 @import 'layout/header';
+@import 'layout/hero';
 @import 'layout/team';
 @import 'layout/about-us';
 @import 'layout/footer';
@@ -131,70 +132,6 @@ h3 {
   background-color: $primary;
 }
 
-/* Hero */
-
-.hero {
-  height: 421px;
-  background-image: url(../images/background.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin-bottom: 45px;
-}
-
-/* Slideshow */
-.hero-wrapper {
-  position: relative;
-  height: 100%;
-  max-width: 767px;
-  margin: auto;
-}
-.slideshow-container {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60%;
-  transform: translate(0, -50%);
-  text-align: center;
-}
-
-.slideshow-container img {
-  width: 90px;
-  margin: -20px;
-  position: relative;
-  transition: 0.5s transform;
-}
-
-.slideshow-container img:hover {
-  transform: scale(1.3);
-  cursor: pointer;
-  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-}
-
-.slideshow-container a:nth-of-type(4) img {
-  z-index: 1;
-}
-
-.slideshow-container a:nth-of-type(3) img {
-  z-index: 2;
-}
-
-.claim {
-  width: 290px;
-  height: 80px;
-  margin: auto;
-  padding: 15px;
-  position: absolute;
-  bottom: -50px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 600;
-  color: $black;
-  background-color: $white;
-  text-align: center;
-  vertical-align: middle;
-}
 
 /* About Us */
 
@@ -367,35 +304,7 @@ footer .wrapper.section {
   }
 
   /*** HERO SECTION ***/
-  .hero {
-    margin-bottom: 0;
-  }
-  .slideshow-container {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-
-  .slideshow-container img {
-    width: 170px;
-    margin: -35px;
-    position: relative;
-  }
-
-  .claim {
-    width: 441px;
-    margin: 0;
-    left: 46px;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-    line-height: 60px;
-    height: 60px;
-    padding: 0;
-    border-radius: 4px 4px 0 0;
-  }
-
+  
   /*** About Us Section ***/
   .us > h3 {
     margin-bottom: 41px;
@@ -504,27 +413,7 @@ footer .wrapper.section {
   .header-menu a {
     padding: 0 10px;
   }
-  /* Hero */
-  .hero {
-    height: 550px;
-  }
-
-  /* Slideshow */
-  .hero-wrapper {
-    max-width: 1200px;
-  }
-
-  .slideshow-container img {
-    width: 250px;
-    margin: -40px;
-  }
-
-  .claim {
-    width: 574px;
-    left: 138px;
-    line-height: 90px;
-    height: 90px;
-  }
+  
 
   /*About us */
   .adalaber img {
