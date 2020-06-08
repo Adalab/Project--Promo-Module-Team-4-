@@ -1,7 +1,7 @@
 /* Colors */
 /* Color palette */
 $dark-green: #099d8d;
-$light-green:#14d9c4;
+$light-green: #14d9c4;
 $black: #000000;
 $white: #ffffff;
 $dark-grey: #54585a;
@@ -19,13 +19,10 @@ $text-light-color: $light-grey;
 $text-dark-color: $dark-grey;
 
 /* Fonts */
-$general-font: "Open Sans",
-sans-serif;
-$special-font: "Rubik",
-sans-serif;
-
+$general-font: "Open Sans", sans-serif;
+$special-font: "Rubik", sans-serif;
 
 /* Breakpoints */
 $screen-small: 320px;
-$screen-medium: 768px;
-$screen-large: 1200px;
+$tablet: 768px;
+$desktop: 1200px;
