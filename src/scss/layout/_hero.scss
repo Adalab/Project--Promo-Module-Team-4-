@@ -53,6 +53,7 @@
     position: relative;
     // transition: 0.5s transform;
     transition: margin-left 0.5s ease, margin-right 0.5s ease;
+    filter: drop-shadow(0 16px 10px black);
 
 
     @media all and (min-width: 768px) {
