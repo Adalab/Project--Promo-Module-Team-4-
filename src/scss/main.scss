@@ -9,8 +9,6 @@
 @import 'layout/footer';
 @import 'pages/index';
 
-
-
 /* Footer */
 
 .footer {
@@ -73,9 +71,8 @@ footer .wrapper.section {
     padding: 60px 45px;
   }
 
-
   /*** About Us Section ***/
-  .us>h3 {
+  .us > h3 {
     margin-bottom: 41px;
   }
 
@@ -110,26 +107,6 @@ footer .wrapper.section {
   .adalaber img {
     height: 205px;
     width: 205px;
-  }
-
-  /* TEAM SECTION */
-  .skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  .skills:before {
-    transform: translateY(-75px) rotate(45deg);
-  }
-
-  .skills article {
-    width: 45%;
-    text-align: center;
-  }
-
-  .skills article:nth-of-type(2) {
-    margin-top: 0;
   }
 
   /*** FOOTER ***/

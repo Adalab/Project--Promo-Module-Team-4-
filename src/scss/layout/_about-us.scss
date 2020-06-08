@@ -34,12 +34,12 @@
 .icons {
   display: inline-block;
   text-align: center;
-  color: $primary;
+  color: $primary-color;
   margin-top: 20px;
   word-spacing: 3px;
 
   &a {
-    color: $primary;
+    color: $primary-color;
     transition: 0.8s color;
 
     &:hover {
