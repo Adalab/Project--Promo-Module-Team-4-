@@ -1,12 +1,31 @@
 /* Colors */
-$background: #f1f1f1;
-$white: #ffffff;
-$light-background: #b8b8b9;
-$secondary: #14d9c4;
-$primary: #099d8d;
-$dark-background: #54585a;
+/* Color palette */
+$dark-green: #099d8d;
+$light-green:#14d9c4;
 $black: #000000;
+$white: #ffffff;
+$dark-grey: #54585a;
+$light-grey: #b8b8b9;
+$pale-grey: #f1f1f1;
+
+/* corporate color palette */
+$primary-color: $dark-green;
+$secondary-color: $light-green;
+$background-color: #f1f1f1;
+/* blanco o grisaceo? DIRTY WHITE tihihihi*/
+$background-light-color: $light-grey;
+$background-dark-color: $dark-grey;
+$text-light-color: $light-grey;
+$text-dark-color: $dark-grey;
 
 /* Fonts */
-$general-font: "Open Sans", sans-serif;
-$special-font: "Rubik", sans-serif;
+$general-font: "Open Sans",
+sans-serif;
+$special-font: "Rubik",
+sans-serif;
+
+
+/* Breakpoints */
+$screen-small: 320px;
+$screen-medium: 768px;
+$screen-large: 1200px;
