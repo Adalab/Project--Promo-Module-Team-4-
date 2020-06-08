@@ -132,14 +132,10 @@
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
 
-    /* Let's put our arrow to go back on the left. */
     &.arrow-prev {
         left: 0;
     }
 
-    /* And our arrow to go forward on the right. Since I'm using
-          the same arrow image for both my arrows, I'm rotating this one by
-          180 degrees so that it points in the right direction */
     &.arrow-next {
         right: 0;
         -webkit-transform: rotate(180deg);
@@ -148,11 +144,6 @@
 
 
 }
-
-/* I really like how these carousel items look on a dark image
-        background, so if a .carousel-item div has the class 'light',
-        we'll make its text color white, and use a white arrow instad of
-        a dark gray one. Again, make sure this arrow image exists somewhere */
 
 @media (max-width: 480px) {
 
@@ -201,4 +192,3 @@
     from {margin-left: 0; margin-right: 0;}
     to {margin-left: -40px; margin-right: -40px;}
 }
-
