@@ -66,50 +66,13 @@ footer .wrapper.section {
 }
 
 /* MEDIA QUERIES */
-/* Versión Tablet */
-@media all and (min-width: 768px) {
+/* /* Versión Tablet */
+ @media all and (min-width: 768px) {
   .section {
     padding: 60px 45px;
-  }
+  } 
 
-  /*** About Us Section ***/
-  .us > h3 {
-    margin-bottom: 41px;
-  }
-
-  .adalaber {
-    /* Make flex items sit next to each other */
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    padding-bottom: 60px;
-  }
-
-  /* Place even images to the right */
-  .adalaber:nth-of-type(even) {
-    flex-direction: row-reverse;
-  }
-
-  /* Align even information to the right */
-  .adalaber:nth-of-type(even) .information {
-    text-align: right;
-  }
-
-  /* Align odd information to the left */
-  .adalaber:nth-of-type(odd) .information {
-    text-align: left;
-  }
-
-  .information {
-    max-width: 445px;
-    margin-top: 0;
-  }
-
-  .adalaber img {
-    height: 205px;
-    width: 205px;
-  }
-
+ 
   /*** FOOTER ***/
   .container-footer {
     position: relative;
@@ -147,10 +110,7 @@ footer .wrapper.section {
   }
 
   /*About us */
-  .adalaber img {
-    height: 278px;
-    width: 278px;
-  }
+
 
   /* .. */
 }
