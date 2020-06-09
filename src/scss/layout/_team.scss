@@ -14,16 +14,7 @@
   display: block;
   height: 120px;
   margin: -120px 0 0;
-  border: 1px solid blue;
 }
-
-// .adalaber:target::before {
-//   content: "";
-//   display: block;
-//   height: 200px;
-//   margin: -200px 0 0;
-//   border: 3px solid yellow;
-// }
 
 .skills {
   position: relative;
@@ -40,11 +31,11 @@
     margin: auto;
     position: absolute;
   }
-  & article:nth-of-type(2) {
+  article:nth-of-type(2) {
     margin-top: 30px;
   }
 
-  & h3 {
+  h3 {
     font-family: $special-font;
     color: $primary-color;
     font-size: 22px;
@@ -54,15 +45,16 @@
 }
 @media all and (min-width: 768px) {
   .skills {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
     &:before {
       transform: translateY(-75px) rotate(45deg);
     }
 
-    & article {
+    article {
       width: 45%;
       text-align: center;
 
