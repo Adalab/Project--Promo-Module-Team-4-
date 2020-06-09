@@ -1,114 +1,15 @@
-@import 'core/variables';
-@import 'core/mixins';
-@import 'core/reset';
-@import 'components/links';
-@import 'layout/page';
-@import 'layout/header';
-@import 'layout/hero';
-@import 'layout/team';
-@import 'layout/about-us';
-@import 'layout/footer';
-@import 'layout/contact';
-@import 'pages/index';
-
-/* Footer */
-
-.footer {
-  border-top: solid 1px var(--light-background);
-  background-color: var(--white);
-}
-
-footer .wrapper.section {
-  padding-top: 30px;
-}
-
-.copy {
-  display: inline-block;
-  width: 172px;
-  height: 20px;
-  font-size: 14px;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--light-background);
-}
-
-.container-logo {
-  display: inline-block;
-  width: 115.9px;
-}
-
-.menu-footer {
-  padding: 0;
-  list-style-type: none;
-  padding: 20px 0 30px;
-  margin: 0;
-}
-
-.menu-footer a {
-  width: 114px;
-  height: 60px;
-  opacity: 0.75;
-  font-size: 14px;
-  font-weight: 600;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.43;
-  letter-spacing: normal;
-  text-align: center;
-  color: var(--dark-background);
-}
-
-.container-logo img {
-  width: 100%;
-}
-
-/* MEDIA QUERIES */
-/* /* Versión Tablet */
-@media all and (min-width: 768px) {
-  .section {
-    padding: 60px 45px;
-  }
-
-  /*** FOOTER ***/
-  .container-footer {
-    position: relative;
-    text-align: left;
-  }
-
-  .copy {
-    text-align: left;
-  }
-
-  .container-logo {
-    margin-top: 15px;
-  }
-
-  .menu-footer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    text-align: right;
-    margin: 0;
-    padding: 0;
-  }
-
-  .menu-footer a {
-    width: 324px;
-    height: 90px;
-    line-height: 2.14;
-    text-align: right;
-  }
-}
-
-@media all and (min-width: 1200px) {
-  .wrapper {
-    max-width: 1200px;
-  }
-}
+@import "core/variables";
+@import "core/mixins";
+@import "core/reset";
+@import "components/links";
+@import "layout/page";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/team";
+@import "layout/about-us";
+@import "layout/footer";
+@import "layout/contact";
+@import "pages/index";
 
 /* TESTS */
 .zoom-in {

@@ -1,8 +1,8 @@
 /* Footer */
 
 .footer {
-  border-top: solid 1px var(--light-background);
-  background-color: var(--white);
+  border-top: solid 1px $background-light-color;
+  background-color: $white;
 }
 
 footer .wrapper.section {
@@ -20,7 +20,7 @@ footer .wrapper.section {
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: var(--light-background);
+  color: $text-light-color;
 }
 
 .container-logo {
@@ -46,7 +46,7 @@ footer .wrapper.section {
   line-height: 1.43;
   letter-spacing: normal;
   text-align: center;
-  color: var(--dark-background);
+  color: $text-dark-color;
 }
 
 .container-logo img {
