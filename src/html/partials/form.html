@@ -8,20 +8,36 @@
 
 <div>
     <form action="https://formspree.io/xqkybken" method="post">
-        <label for="fullname">Nombre completo <span>*</span>*
-            <input type="text" id="fullname" name="fullname" placeholder="Nombre">
-        </label>
-        <label for="emailAddress">Email
-            <span>*</span>
-            <input type="email" id="emailAddress" name="emailAddress" placeholder="nombre.apellidos@mail.com" />
-        </label>
-        <label for="telephone">Teléfono
-            <input type="tel" id="telephone" name="telephone" />
-        </label>
-        <label for="comments">Mensaje: <span>*</span>*
-            <textarea id="comments" name="comments" rows="8" cols="80"></textarea>
-        </label>
-        <button type="submit" value="Enviar">Enviar</button>
+        <div>
+            <label for="fullname">Nombre completo <span>*</span>
+                <input type="text" id="fullname" name="fullname" placeholder="Nombre">
+            </label>
+        </div>
+
+        <div>
+            <label for="emailAddress">Email
+                <span>*</span>
+                <input type="email" id="emailAddress" name="emailAddress" placeholder="nombre.apellidos@mail.com" />
+            </label>
+
+        </div>
+
+        <div>
+            <label for="telephone">Teléfono
+                <input type="tel" id="telephone" name="telephone" />
+            </label>
+        </div>
+
+        <div>
+            <label for="comments">Mensaje: <span>*</span>
+                <textarea id="comments" name="comments" rows="8" cols="50" placeholder="¿Qué necesitas?"></textarea>
+            </label>
+        </div>
+        <div>
+            <button type="submit" value="Enviar">Enviar</button>
+        </div>
+
+
 
 
     </form>
