@@ -17,13 +17,17 @@
   &__menu {
     display: flex;
     align-items: center;
+    justify-content: center;
     padding: 0 15px;
     font-family: $special-font;
     font-size: 15px;
+    padding: 0;
+    height: 100%;
 
     & li {
       display: inline-block;
       align-self: center;
+      height: 100%;
       flex: 1 1 auto;
       transition: 0.8s background-color;
     }
@@ -32,7 +36,7 @@
     }
     & a {
       line-height: 45px;
-      padding: 0 6px;
+      padding: 9px 6px;
       display: block;
       height: 100%;
       font-size: 15px;
@@ -61,7 +65,7 @@
         flex-grow: 0;
       }
       & a {
-        line-height: 60px;
+        padding: 15px 6px;
       }
 
       & a:hover {
@@ -76,7 +80,7 @@
       padding-left: 142px;
     }
     &__menu a {
-      padding: 0 10px;
+      padding: 15px 10px;
     }
   }
 }
@@ -116,9 +120,4 @@
     background-color: $primary-color;
     height: 60px;
   }
-}
-.header ul {
-  margin: 0;
-  height: 100%;
-  padding: 0;
 }
