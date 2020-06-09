@@ -1,129 +1,82 @@
 .hero {
     height: 421px;
-    background-image: url(../images/background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url(../images/code-background.png);
+    background-repeat: repeat;
+    background-size: 150%;
     background-attachment: fixed;
-    margin-bottom: 45px;
 
-    @media all and (min-width: 768px) {
-        margin-bottom: 0;
-    }
-
-    @media all and (min-width: 1200px) {
-        height: 550px;
-    }
-}
-
-/* Slideshow */
-.hero-wrapper {
+    // Animation Scroll
+    animation: scroll 60s linear 0s infinite reverse;
     position: relative;
-    height: 100%;
-    max-width: 767px;
-    margin: auto;
-
-    @media all and (min-width: 1200px) {
-        max-width: 1300px;
-    }
+    box-shadow: inset 0px 0px 94px 49px rgba(0,0,0,0.75);
+    // filter: blur(0.5px);
 }
 
+// Scroll animation for the hero background
+@keyframes scroll {
+    from { 
+        background-position: 0 0;
+    } 
+    to { 
+        background-position: 0 -1000px;
+    } 
+}
+
+
+// Slideshow
 .slideshow-container {
     position: absolute;
     left: 0;
     right: 0;
-    top: 60%;
+    top: 50%;
     transform: translate(0, -50%);
     text-align: center;
-    opacity: 0;
     transition: all 0.5s ease-out;
     border: solid 1px red;
 
-    @media all and (min-width: 768px) {
-        position: absolute;
-        top: 50%;
-        left: 0;
-        right: 0;
-        text-align: center;
+    img {
+        width: 100px;
+        margin: -20px;
+
+        // transition: 0.5s transform;
+        transition: margin-left 0.5s ease, margin-right 0.5s ease;
+        filter: drop-shadow(16px 16px 10px black);
+    
+    
+        @media all and (min-width: 768px) {
+            width: 170px;
+            margin: -35px;
+
+        }
+    
+        @media all and (min-width: 1200px) {
+            width: 200px;
+            margin: -40px;
+        }
+    
+        &:hover {
+            margin-left: -10px;
+            margin-right: -10px;
+            transform: scale(1.2);
+            cursor: pointer;
+            text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }
     }
 }
 
-.slideshow-container img {
-    width: 90px;
-    margin: -20px;
+
+/* Fix z-index of slideshow items */
+.slideshow-container a:nth-of-type(3)   {
     position: relative;
-    // transition: 0.5s transform;
-    transition: margin-left 0.5s ease, margin-right 0.5s ease;
-    filter: drop-shadow(0 16px 10px black);
-
-
-    @media all and (min-width: 768px) {
-        width: 170px;
-        margin: -35px;
-        position: relative;
-    }
-
-    @media all and (min-width: 1200px) {
-        width: 250px;
-        margin: -40px;
-    }
-
-    &:hover {
-        margin-left: -10px;
-        margin-right: -10px;
-        transform: scale(1.3);
-        cursor: pointer;
-        text-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
-    }
-
+    z-index: 50;
 }
-
-.slideshow-container a:nth-of-type(4) img {
-    z-index: 1;
-}
-
-.slideshow-container a:nth-of-type(3) img {
-    z-index: 2;
-}
-
-.claim {
-    width: 290px;
-    height: 80px;
-    margin: auto;
-    padding: 15px;
-    position: absolute;
-    bottom: -50px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    font-size: 18px;
-    font-weight: 600;
-    color: $black;
-    background-color: $white;
-    text-align: center;
-    vertical-align: middle;
-
-    @media all and (min-width: 768px) {
-        width: 441px;
-        margin: 0;
-        left: 46px;
-        bottom: 0;
-        background-color: rgba(255, 255, 255, 0.8);
-        line-height: 60px;
-        height: 60px;
-        padding: 0;
-        border-radius: 4px 4px 0 0;
-    }
-
-    @media all and (min-width: 1200px) {
-        width: 574px;
-        left: 138px;
-        line-height: 90px;
-        height: 90px;
-    }
+.slideshow-container a:nth-of-type(4)  {
+    position: relative;
+    z-index: 30;
 }
 
 
-
+// Slideshow arrows
 .arrow {
     position: absolute;
     top: 0;
@@ -131,7 +84,7 @@
     width: 50px;
     height: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    background: url("http://haloxp.com/codepen/carousel-arrow-dark.png") 50% 50% / 20px no-repeat;
+    background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
 
     &.arrow-prev {
         left: 0;
@@ -143,22 +96,17 @@
         transform: rotate(180deg);
     }
 
-
-}
-
-@media (max-width: 480px) {
-
-    .arrow,
-    &.light .arrow {
+    @media (max-width: 480px) {
         background-size: 10px;
         background-position: 10px 50%;
     }
 }
 
+
+/* Slideshow functionality */
 [id^="target-item"] {
     display: none;
 }
-
 
 .slide-1 {
     z-index: 2;
@@ -186,10 +134,35 @@
 #target-item-3:target~.slide-3 img,
 #target-item-4:target~.slide-4 img,
 #target-item-5:target~.slide-5 img {
-    animation: spread 2s ease;
+    animation-fill-mode: both;
+}
+
+// @keyframes spread {
+//     from {margin-left: 0; margin-right: 0;}
+//     to {margin-left: -40px; margin-right: -40px;}
+// }
+
+/****/
+
+.item {
+    opacity: 0;
+}
+
+.slideshow-container:hover .item {
+    animation: fade-in 0.5s 1 ease, spread 2s 1 ease  1.5s;
+    animation-fill-mode: both;
+}
+
+
+
+
+
+@keyframes fade-in {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
 }
 
 @keyframes spread {
-    from {margin-left: 0; margin-right: 0;}
-    to {margin-left: -40px; margin-right: -40px;}
+    from {margin-left: -100; margin-right: -100;}
+    to {margin-left: 0; margin-right: 0;}
 }
