@@ -138,3 +138,41 @@
     from {margin-left: -10px; margin-right: -10px; transform: scale(0.8);}
     to { margin-left: 5px; margin-right: 5px; transform: scale(1);}
 }
+
+/* Claim */
+.claim {
+    width: 290px;
+    height: 80px;
+    margin: auto;
+    padding: 15px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: $black;
+    background-color: $white;
+    text-align: center;
+    vertical-align: middle;
+
+    @media all and (min-width: 768px) {
+        width: 441px;
+        margin: 0;
+        left: 46px;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.8);
+        line-height: 60px;
+        height: 60px;
+        padding: 0;
+        border-radius: 4px 4px 0 0;
+    }
+
+    @media all and (min-width: 1200px) {
+        width: 574px;
+        left: 138px;
+        line-height: 90px;
+        height: 90px;
+    }
+}
