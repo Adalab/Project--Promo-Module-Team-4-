@@ -4,7 +4,7 @@
     background-repeat: repeat;
     background-size: 150%;
     background-attachment: fixed;
-
+    position: relative;
     // Animation Scroll
     animation: scroll 60s linear 0s infinite reverse;
     position: relative;
@@ -14,12 +14,8 @@
 
 // Scroll animation for the hero background
 @keyframes scroll {
-    from { 
-        background-position: 0 0;
-    } 
-    to { 
-        background-position: 0 -1000px;
-    } 
+    from { background-position: 0 0;} 
+    to { background-position: 0 -1000px;} 
 }
 
 
@@ -31,25 +27,26 @@
     top: 50%;
     transform: translate(0, -50%);
     text-align: center;
+    opacity: 0;
     transition: all 0.5s ease-out;
-    border: solid 1px red;
+    max-width: 1200px;
+    margin: auto;
 
     img {
         width: 100px;
-        margin: -20px;
+        margin: -30px;
 
         // transition: 0.5s transform;
         transition: margin-left 0.5s ease, margin-right 0.5s ease;
         filter: drop-shadow(16px 16px 10px black);
     
     
-        @media all and (min-width: 768px) {
+        @include tablet {
             width: 170px;
             margin: -35px;
-
         }
     
-        @media all and (min-width: 1200px) {
+        @include desktop {
             width: 200px;
             margin: -40px;
         }
@@ -81,9 +78,11 @@
     position: absolute;
     top: 0;
     display: block;
-    width: 50px;
+    width: 40px;
+    opacity: 0.5;
+    background-size: 10px;
+    background-position: 10px 50%;
     height: 100%;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
     background: url("http://haloxp.com/codepen/carousel-arrow-light.png") 50% 50% / 20px no-repeat;
 
     &.arrow-prev {
@@ -92,18 +91,12 @@
 
     &.arrow-next {
         right: 0;
-        -webkit-transform: rotate(180deg);
         transform: rotate(180deg);
-    }
-
-    @media (max-width: 480px) {
-        background-size: 10px;
-        background-position: 10px 50%;
     }
 }
 
 
-/* Slideshow functionality */
+/* Slideshow functionality: hiding slides and showing only 1 */
 [id^="target-item"] {
     display: none;
 }
@@ -129,40 +122,19 @@
     opacity: 1;
 }
 
-#target-item-1:target~.slide-1 img,
-#target-item-2:target~.slide-2 img,
-#target-item-3:target~.slide-3 img,
-#target-item-4:target~.slide-4 img,
-#target-item-5:target~.slide-5 img {
-    animation-fill-mode: both;
-}
-
-// @keyframes spread {
-//     from {margin-left: 0; margin-right: 0;}
-//     to {margin-left: -40px; margin-right: -40px;}
-// }
-
-/****/
-
 .item {
-    opacity: 0;
-}
-
-.slideshow-container:hover .item {
-    animation: fade-in 0.5s 1 ease, spread 2s 1 ease  1.5s;
+    animation: spread 0.8s 1 ease 0.6s, fadein 0.8s 1 ease 0.5s;
     animation-fill-mode: both;
 }
 
-
-
-
-
-@keyframes fade-in {
+/* Fade-in animation */
+@keyframes fadein {
     from {opacity: 0%;}
     to {opacity: 100%;}
 }
 
+/* Spread faces animation */
 @keyframes spread {
-    from {margin-left: -100; margin-right: -100;}
-    to {margin-left: 0; margin-right: 0;}
+    from {margin-left: -10px; margin-right: -10px; transform: scale(0.8);}
+    to { margin-left: 5px; margin-right: 5px; transform: scale(1);}
 }
