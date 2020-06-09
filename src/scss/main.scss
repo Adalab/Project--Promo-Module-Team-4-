@@ -1,14 +1,14 @@
-@import "core/variables";
-@import "core/reset";
-@import "core/mixins";
-@import "components/links";
-@import "layout/page";
-@import "layout/header";
-@import "layout/hero";
-@import "layout/team";
-@import "layout/about-us";
-@import "layout/footer";
-@import "pages/index";
+@import 'core/variables';
+@import 'core/mixins';
+@import 'core/reset';
+@import 'components/links';
+@import 'layout/page';
+@import 'layout/header';
+@import 'layout/hero';
+@import 'layout/team';
+@import 'layout/about-us';
+@import 'layout/footer';
+@import 'pages/index';
 
 /* Footer */
 
@@ -67,12 +67,11 @@ footer .wrapper.section {
 
 /* MEDIA QUERIES */
 /* /* Versión Tablet */
- @media all and (min-width: 768px) {
+@media all and (min-width: 768px) {
   .section {
     padding: 60px 45px;
-  } 
+  }
 
- 
   /*** FOOTER ***/
   .container-footer {
     position: relative;
@@ -110,7 +109,6 @@ footer .wrapper.section {
   }
 
   /*About us */
-
 
   /* .. */
 }
