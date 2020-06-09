@@ -1,3 +1,14 @@
+.hero-wrapper {
+    position: relative;
+    height: 100%;
+    max-width: 767px;
+    margin: auto;
+
+    @include desktop {
+        max-width: 1300px;
+    }
+}
+
 .hero {
     height: 421px;
     background-image: url(../images/code-background.png);
@@ -122,6 +133,7 @@
     opacity: 1;
 }
 
+
 .item {
     animation: spread 0.8s 1 ease 0.6s, fadein 0.8s 1 ease 0.5s;
     animation-fill-mode: both;
@@ -170,9 +182,9 @@
     }
 
     @media all and (min-width: 1200px) {
-        width: 574px;
+        width: 550px;
         left: 138px;
-        line-height: 90px;
-        height: 90px;
+        line-height: 70px;
+        height: 70px;
     }
 }
