@@ -1,40 +1,46 @@
 <div>
-    <h3>CONTACTO</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eos, nisi quam voluptas obcaecati fuga, optio,
-        doloribus quibusdam quia veritatis atque aut! Expedita, veritatis. Corrupti dicta ducimus sequi. Nemo, libero.
-    </p>
-    <small>Todos los campos marcados con <span>*</span> son obligatorios.</small>
+    <h3 class="contact-title">CONTACTO</h3>
+    <div class="contact-info contact-wrapper">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eos, nisi quam voluptas obcaecati fuga,
+            optio,
+            doloribus quibusdam quia veritatis atque aut! Expedita, veritatis. Corrupti dicta ducimus sequi. Nemo,
+            libero.
+        </p>
+        <small class="small-info">Todos los campos marcados con <span>*</span> son obligatorios.</small>
+    </div>
+
 </div>
 
 <div>
     <form action="https://formspree.io/xqkybken" method="post">
-        <div>
-            <label for="fullname">Nombre completo <span>*</span>
-                <input type="text" id="fullname" name="fullname" placeholder="Nombre">
+        <div class="contact-wrapper">
+            <label for="fullname" class="form-item">Nombre completo <span>*</span>
+                <input type="text" id="fullname" name="fullname" placeholder="  Nombre...">
             </label>
         </div>
+        <div class="inline-wrapper">
+            <div class="contact-wrapper line-item mail">
+                <label for="emailAddress" class="form-item">Email
+                    <span>*</span>
+                    <input type="email" id="emailAddress" name="emailAddress" placeholder="  nombre.apellidos@mail.com"
+                        value="  nombre.apellidos@mail.com" />
+                </label>
 
-        <div>
-            <label for="emailAddress">Email
-                <span>*</span>
-                <input type="email" id="emailAddress" name="emailAddress" placeholder="nombre.apellidos@mail.com" />
-            </label>
+            </div>
 
+            <div class="contact-wrapper line-item tel">
+                <label for="telephone" class="form-item">Teléfono
+                    <input type="tel" id="telephone" name="telephone" placeholder="  Ej: 123456789" />
+                </label>
+            </div>
         </div>
-
-        <div>
-            <label for="telephone">Teléfono
-                <input type="tel" id="telephone" name="telephone" />
+        <div class="contact-wrapper">
+            <label for="comments" class="form-item">Mensaje: <span>*</span>
+                <textarea id="comments" name="comments" rows="8" cols="35" placeholder="  ¿Qué necesitas?"></textarea>
             </label>
         </div>
-
-        <div>
-            <label for="comments">Mensaje: <span>*</span>
-                <textarea id="comments" name="comments" rows="8" cols="50" placeholder="¿Qué necesitas?"></textarea>
-            </label>
-        </div>
-        <div>
-            <button type="submit" value="Enviar">Enviar</button>
+        <div class="contact-wrapper">
+            <button class="button" type="submit" value="Enviar" class="form-item">ENVIAR</button>
         </div>
 
 
