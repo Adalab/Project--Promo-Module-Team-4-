@@ -57,6 +57,9 @@
     }
     &:before {
       transform: translateY(-75px) rotate(45deg);
+      @include desktop {
+        transform: translateY(-60px) rotate(45deg);
+      }
     }
 
     article {

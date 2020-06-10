@@ -2,7 +2,7 @@ input {
   display: block;
   width: 100%;
   margin: auto;
-  /* padding: 15px; */
+  padding: 15px;
   height: 45px;
   /* width: 290px; */
   border: 1px solid $background-light-color;
@@ -11,6 +11,9 @@ input {
 }
 label {
   color: $text-dark-color;
+  line-height: 2;
+  font-size: 14px;
+  
 }
 
 .contact-title {
@@ -32,13 +35,25 @@ label {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
   width: 290px;
   margin: auto;
+
+  @include tablet{
+    width: 442px;
+  
+  }
+  @include desktop{
+    width: 601px;
+    flex-wrap:wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
 }
 
-.form > * {
-  border: 1px solid blue;
+.form-item {
+  width: 100%;
+  margin-bottom:13px;
 }
 
 span {
@@ -54,6 +69,7 @@ textarea {
   padding: 15px;
   color: $text-dark-color;
   border: 1px solid $background-light-color;
+  width: 100%;
 }
 
 textarea::placeholder {
@@ -66,10 +82,22 @@ textarea::placeholder {
   background-color: $primary-color;
   color: $white;
   font-weight: bold;
-  margin-top: 30px;
-  margin-bottom: 60px;
+  margin-top: 17px;
+  margin-bottom: 47px;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 1s ease;
+
+
+  &:hover{
+    background-color: $secondary-color;
+    
+  }
+
+  @include desktop {
+    margin-bottom:107px;
+  }
 }
 
 .contact-wrapper {
@@ -84,17 +112,12 @@ textarea::placeholder {
     // margin: auto;
   }
 
-  .contact-wrapper:last-of-type {
-    border: solid 1px pink;
+  .form-item:last-of-type {
+    // border: solid 1px pink;
     align-self: flex-end;
+    width: auto;
   }
 
-  input {
-    width: 442px;
-  }
-  textarea {
-    width: 442px;
-  }
   .button {
     // margin-left: 238px;
     width: 206px;
@@ -106,12 +129,7 @@ textarea::placeholder {
     max-width: 601px;
     margin: auto;
   }
-  input {
-    width: 601px;
-  }
-  textarea {
-    width: 601px;
-  }
+ 
   .line-item {
     display: inline-block;
   }
@@ -119,15 +137,25 @@ textarea::placeholder {
     max-width: 601px;
     margin: auto;
   }
-  .mail input {
-    width: 395px;
-    margin-right: 39px;
-  }
-  .tel input {
-    width: 162px;
-  }
+   .mail {
+     width: 395px;
+   }
+   .tel {
+     width: 162px;
+   }
   .button {
-    margin-left: 321px;
+    // margin-left: 321px;
     width: 278px;
   }
+
+  .form-item:last-of-type {
+    margin-left: auto;
+  }
 }
+
+
+// Make form look the same
+::placeholder {
+  font-size: 14px;
+}
+

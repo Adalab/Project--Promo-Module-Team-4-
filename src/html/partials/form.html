@@ -1,11 +1,10 @@
 <div>
   <h3 class="contact-title">CONTACTO</h3>
   <div class="contact-info contact-wrapper">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eos,
-      nisi quam voluptas obcaecati fuga, optio, doloribus quibusdam quia
-      veritatis atque aut! Expedita, veritatis. Corrupti dicta ducimus sequi.
-      Nemo, libero.
+    <p>¿Te interesa trabajar con nosotras? </p>
+    <p>Para consultar cualquier duda sobre el equipo o sobre nuestra forma de trabajar no dudes en contactarnos.</p>
+   <p> Rellena el formulario con la información de tu proyecto y contactaremos contigo lo antes posible.</p>
+    <p>Pronto recibirás noticias nuestras :)</p>
     </p>
     <small class="small-info"
       >Todos los campos marcados con <span>*</span> son obligatorios.</small
@@ -15,20 +14,21 @@
 
 <div>
   <form class="form" action="https://formspree.io/xqkybken" method="post">
-    <div class="contact-wrapper">
-      <label for="fullname" class="form-item"
+    <div class="form-item">
+      <label for="fullname" 
         >Nombre completo <span>*</span>
         <input
           type="text"
           id="fullname"
           name="fullname"
           placeholder="Nombre..."
+          required
         />
       </label>
     </div>
 
-    <div class="contact-wrapper line-item mail">
-      <label for="emailAddress" class="form-item"
+    <div class="line-item mail form-item">
+      <label for="emailAddress"
         >Email
         <span>*</span>
         <input
@@ -36,25 +36,26 @@
           id="emailAddress"
           name="emailAddress"
           placeholder="nombre.apellidos@mail.com"
-          value="  nombre.apellidos@mail.com"
+          required
         />
       </label>
     </div>
 
-    <div class="contact-wrapper line-item tel">
-      <label for="telephone" class="form-item"
+    <div class="line-item tel form-item">
+      <label for="telephone"
         >Teléfono
         <input
           type="tel"
           id="telephone"
           name="telephone"
           placeholder="Ej: 123456789"
+          pattern="[0-9]{9}"
         />
       </label>
     </div>
 
-    <div class="contact-wrapper">
-      <label for="comments" class="form-item"
+    <div class="form-item">
+      <label for="comments" 
         >Mensaje: <span>*</span>
         <textarea
           id="comments"
@@ -62,11 +63,12 @@
           rows="8"
           cols="35"
           placeholder="¿Qué necesitas?"
+          required
         ></textarea>
       </label>
     </div>
-    <div class="contact-wrapper">
-      <button class="button" type="submit" value="Enviar" class="form-item">
+    <div class="form-item">
+      <button class="button" type="submit" value="Enviar">
         ENVIAR
       </button>
     </div>

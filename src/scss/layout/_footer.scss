@@ -47,6 +47,10 @@ footer .wrapper.section {
   letter-spacing: normal;
   text-align: center;
   color: $text-dark-color;
+
+  &:hover{
+    color: $primary-color;
+  }
 }
 
 .container-logo img {
