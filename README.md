@@ -1,4 +1,4 @@
-![cabecera](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/cabecera.gif)
+![cabecera](./images/cabecera.gif)
 
 # Quinteto de sudo
 
