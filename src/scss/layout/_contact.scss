@@ -2,4 +2,96 @@ input {
   display: block;
   width: 100%;
   margin: auto;
+  height: 45px;
+  width: 290px;
+  border-color: $background-light-color;
+}
+label {
+  color: $text-dark-color;
+}
+.mail {
+  color: $text-dark-color;
+}
+.contact-title {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.contact-info {
+  margin: 0px 15px 70px 15px;
+}
+.small-info {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+form {
+  text-align: left;
+}
+span {
+  color: $secondary-color;
+}
+
+.button {
+  width: 290px;
+  height: 45px;
+  background-color: $primary-color;
+  color: $white;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-bottom: 60px;
+}
+
+.contact-wrapper {
+  max-width: 290px;
+  margin: auto;
+}
+
+/* MEDIA QUERIES */
+@media all and (min-width: 768px) {
+  .contact-wrapper {
+    max-width: 442px;
+    margin: auto;
+  }
+  input {
+    width: 442px;
+  }
+  textarea {
+    width: 442px;
+  }
+  .button {
+    margin-left: 238px;
+    width: 206px;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .contact-wrapper {
+    max-width: 601px;
+    margin: auto;
+  }
+  input {
+    width: 601px;
+  }
+  textarea {
+    width: 601px;
+  }
+  .line-item {
+    display: inline-block;
+  }
+  .inline-wrapper {
+    max-width: 601px;
+    margin: auto;
+  }
+  .mail input {
+    width: 395px;
+    margin-right: 39px;
+  }
+  .tel input {
+    width: 162px;
+  }
+  .button {
+    margin-left: 321px;
+    width: 278px;
+  }
 }
