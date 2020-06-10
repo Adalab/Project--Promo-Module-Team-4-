@@ -43,62 +43,89 @@
 
   <main>
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero hero-contact">
         <div class="hero-wrapper">
             <!-- Slideshow -->
-            <div class="slideshow-container">
-                <a href="#corina"><img src="./assets/images/cabezas/corina-5.png" /></a>
-                <a href="#elena"><img src="./assets/images/cabezas/elena-4.png" /></a>
-                <a href="#mariandre"><img src="./assets/images/cabezas/mari-andre-3.png" /></a>
-                <a href="#mercedes"><img src="./assets/images/cabezas/mercedes-2.png" /></a>
-                <a href="#sara"><img src="./assets/images/cabezas/sara-1.png" /></a>
-            </div>
+
         </div>
     </section>
     <div>
-        <h3>CONTACTO</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eos, nisi quam voluptas obcaecati fuga, optio,
-            doloribus quibusdam quia veritatis atque aut! Expedita, veritatis. Corrupti dicta ducimus sequi. Nemo, libero.
+      <h3 class="contact-title">CONTACTO</h3>
+      <div class="contact-info contact-wrapper">
+        <p>¿Te interesa trabajar con nosotras? </p>
+        <p>Para consultar cualquier duda sobre el equipo o sobre nuestra forma de trabajar no dudes en contactarnos.</p>
+       <p> Rellena el formulario con la información de tu proyecto y contactaremos contigo lo antes posible.</p>
+        <p>Pronto recibirás noticias nuestras :)</p>
         </p>
-        <small>Todos los campos marcados con <span>*</span> son obligatorios.</small>
+        <small class="small-info"
+          >Todos los campos marcados con <span>*</span> son obligatorios.</small
+        >
+      </div>
     </div>
 
     <div>
-        <form action="https://formspree.io/xqkybken" method="post">
-            <div>
-                <label for="fullname">Nombre completo <span>*</span>
-                    <input type="text" id="fullname" name="fullname" placeholder="Nombre">
-                </label>
-            </div>
+      <form class="form" action="https://formspree.io/xqkybken" method="post">
+        <div class="form-item">
+          <label for="fullname" 
+            >Nombre completo <span>*</span>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Nombre..."
+              required
+            />
+          </label>
+        </div>
 
-            <div>
-                <label for="emailAddress">Email
-                    <span>*</span>
-                    <input type="email" id="emailAddress" name="emailAddress" placeholder="nombre.apellidos@mail.com" />
-                </label>
+        <div class="line-item mail form-item">
+          <label for="emailAddress"
+            >Email
+            <span>*</span>
+            <input
+              type="email"
+              id="emailAddress"
+              name="emailAddress"
+              placeholder="nombre.apellidos@mail.com"
+              required
+            />
+          </label>
+        </div>
 
-            </div>
+        <div class="line-item tel form-item">
+          <label for="telephone"
+            >Teléfono
+            <input
+              type="tel"
+              id="telephone"
+              name="telephone"
+              placeholder="Ej: 123456789"
+              pattern="[0-9]{9}"
+            />
+          </label>
+        </div>
 
-            <div>
-                <label for="telephone">Teléfono
-                    <input type="tel" id="telephone" name="telephone" />
-                </label>
-            </div>
-
-            <div>
-                <label for="comments">Mensaje: <span>*</span>
-                    <textarea id="comments" name="comments" rows="8" cols="50" placeholder="¿Qué necesitas?"></textarea>
-                </label>
-            </div>
-            <div>
-                <button type="submit" value="Enviar">Enviar</button>
-            </div>
-
-
-
-
-        </form>
+        <div class="form-item">
+          <label for="comments" 
+            >Mensaje: <span>*</span>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="8"
+              cols="35"
+              placeholder="¿Qué necesitas?"
+              required
+            ></textarea>
+          </label>
+        </div>
+        <div class="form-item">
+          <button class="button" type="submit" value="Enviar">
+            ENVIAR
+          </button>
+        </div>
+      </form>
     </div>
+
 
 
 
@@ -131,24 +158,29 @@
         <nav>
           <ul class="menu-footer">
             <li>
-              <a href="#equipo" title="Ir a Equipo">EQUIPO </a>
+              <a href="./index.html#equipo" title="Ir a Equipo">EQUIPO </a>
             </li>
             <li>
-              <a href="#somos" title="Ir a Quiénes somos">QUIÉNES SOMOS </a>
+              <a href="./index.html#somos" title="Ir a Quiénes somos">QUIÉNES SOMOS </a>
             </li>
             <li>
-              <a href="#contacto" title="Ir a Contacto">CONTACTO </a>
+              <a href="./contact.html" title="Ir a Contacto">CONTACTO </a>
             </li>
           </ul>
         </nav>
         <div class="container-logo">
-          <a href="#header" title="Ir al principio de la web de Adalab">
-            <img class="logo-adalab" src="./assets/images/logo-adalab.png" alt="Logo de Adalab" />
+          <a href="./index.html#header" title="Ir al principio de la web de Adalab">
+            <img
+              class="logo-adalab"
+              src="./assets/images/logo-adalab.png"
+              alt="Logo de Adalab"
+            />
           </a>
         </div>
       </div>
     </div>
   </footer>
+
 
 </body>
 
