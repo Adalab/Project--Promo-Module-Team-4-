@@ -20,7 +20,15 @@
     animation: scroll 60s linear 0s infinite reverse;
     position: relative;
     box-shadow: inset 0px 0px 94px 49px rgba(0,0,0,0.75);
+    margin-bottom: 31px;
     // filter: blur(0.5px);
+    @include tablet {
+        margin-bottom: 0;
+    }
+}
+
+.hero-contact {
+    height: 300px;
 }
 
 // Scroll animation for the hero background
@@ -35,7 +43,7 @@
     position: absolute;
     left: 0;
     right: 0;
-    top: 50%;
+    top: 60%;
     transform: translate(0, -50%);
     text-align: center;
     opacity: 0;
@@ -43,10 +51,15 @@
     max-width: 1200px;
     margin: auto;
 
+    @include tablet {
+        top: 50%;
+    }
+
     img {
         width: 100px;
         margin: -30px;
 
+        top: 50%;
         // transition: 0.5s transform;
         transition: margin-left 0.5s ease, margin-right 0.5s ease;
         filter: drop-shadow(16px 16px 10px black);
@@ -58,7 +71,7 @@
         }
     
         @include desktop {
-            width: 200px;
+            width: 180px;
             margin: -40px;
         }
     
@@ -168,6 +181,7 @@
     background-color: $white;
     text-align: center;
     vertical-align: middle;
+ 
 
     @media all and (min-width: 768px) {
         width: 441px;
@@ -182,9 +196,9 @@
     }
 
     @media all and (min-width: 1200px) {
-        width: 550px;
+        width: 500px;
         left: 138px;
-        line-height: 70px;
-        height: 70px;
+        line-height: 60px;
+        height: 60px;
     }
 }
