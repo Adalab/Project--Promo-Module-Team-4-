@@ -87,6 +87,11 @@
   color: $primary-color;
   margin-top: 20px;
   word-spacing: 3px;
+  :nth-child(2n) {
+    a:first-child {
+      display: none;
+    }
+  }
 
   a {
     color: $primary-color;
@@ -99,5 +104,5 @@
 }
 
 i.fab:after {
-  content: ' ·';
+  content: " ·";
 }
