@@ -53,6 +53,9 @@
     }
   }
 }
+#elena .icons a:first-child {
+  display: none;
+}
 
 /* Align odd information to the left */
 .adalaber:nth-of-type(odd) .information {
@@ -87,11 +90,6 @@
   color: $primary-color;
   margin-top: 20px;
   word-spacing: 3px;
-  :nth-child(2n) {
-    a:first-child {
-      display: none;
-    }
-  }
 
   a {
     color: $primary-color;
