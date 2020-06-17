@@ -53,6 +53,9 @@
     }
   }
 }
+#elena .icons a:first-child {
+  display: none;
+}
 
 /* Align odd information to the left */
 .adalaber:nth-of-type(odd) .information {
@@ -99,5 +102,5 @@
 }
 
 i.fab:after {
-  content: ' ·';
+  content: " ·";
 }
