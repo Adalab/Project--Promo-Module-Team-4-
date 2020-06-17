@@ -2,5 +2,38 @@
 
 # Quinteto de sudo
 
-Esta es la documentación sobre nuestro proyecto
+En este proyecto de página web grupal presentamos a las integrantes de nuestro grupo **Quinteto de $sudo** para promocionarlas ante posibles clientes. Para ello nuestra página cuenta con una sección de introducción a las alumnas con links a sus redes sociales y profesionales y una sección de formulario para que los posibles clientes puedan contactar con nosotras.
 
+## Tecnologías empleadas
+
+| Maquetación                                                  | Automatización                                               | Control de versiones                                         |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| <img src="/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/sass.png" alt="sass" style="zoom:11%;" /><img src="/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/html5.png" alt="html5" style="zoom:9%;" /><img src="/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/css.jpg" alt="css" style="zoom:5%;" /> | <img src="/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/gulp-icon.jpg" alt="gulp-icon" style="zoom:7%;" /> | <img src="/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/git-icon.png" alt="git-icon" style="zoom:4%;" /> |
+
+Toda nuestra página está maquetada en **HTML** y **CSS**. Para ello hemos utilizado **Sass** como preprocesador de CSS y **Gulp** para la automatización de tareas. Con respecto al control de versiones, hemos manejado **git** con soltura, creando diferentes ramas y experimentando con nuevas features, solventando conflictos (hard & soft!).
+
+Nuestra visión ha sido de **mobile first**, adaptando el diseño a otros tamaños de pantallas. 
+
+
+
+## Integrantes del grupo
+
+![image-20200617133706247](./images/image-20200617133706247.png)
+
+
+
+## Partes de la página
+
+La página principal `index.html` muestra información general sobre el equipo, nuestras fortalezas y debilidades, así como una sección dedicada a presentar a cada una de las alumnas brevemente y los métodos de contacto con cada una: github, twitter, instagram, linkedin. 
+
+![image-20200617135936289](./images/image-20200617135936289.png)
+
+![image-20200617140045386](./images/image-20200617140045386.png)
+
+
+
+La página de `contacto.html`  consiste en un formulario funcional a través del cuál los clientes pueden comunicarse con el grupo. 
+
+
+
+![image-20200617135959951](./images/image-20200617135959951.png)
