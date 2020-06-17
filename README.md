@@ -6,9 +6,9 @@ En este proyecto de página web grupal presentamos a las integrantes de nuestro 
 
 ## Tecnologías empleadas
 
-| Maquetación                                                  | Automatización                                               | Control de versiones                                         |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| ![sass](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/sass.png)![css](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/css.jpg)![html5](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/html5.png) | ![gulp-icon](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/gulp-icon.jpg) | ![git-icon](/Users/elemarmar/Documents/Adalab/5. repositorios/Project--Promo-Module-Team-4/images/icons/git-icon.png) |
+| Maquetación                                                  | Automatización                             | Control de versiones                     |
+| ------------------------------------------------------------ | ------------------------------------------ | ---------------------------------------- |
+| ![sass](./images/icons/sass.png)![css](./images/icons/css.jpg)![html5](./images/icons/html5.png) | ![gulp-icon](./images/icons/gulp-icon.jpg) | ![git-icon](./images/icons/git-icon.png) |
 
 Toda nuestra página está maquetada en **HTML** y **CSS**. Para ello hemos utilizado **Sass** como preprocesador de CSS y **Gulp** para la automatización de tareas. Con respecto al control de versiones, hemos manejado **git** con soltura, creando diferentes ramas y experimentando con nuevas features, solventando conflictos (hard & soft!).
 
